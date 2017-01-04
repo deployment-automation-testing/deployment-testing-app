@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <processModelHaul>
   <folderUuid>0000d1ea-b1d2-8000-57a7-d970dbd970db</folderUuid>
   <roleMap>
@@ -27,10 +27,7 @@
       <groups/>
     </role>
   </roleMap>
-  <process_model_port schemaVersion="007.000.001"
-    xmlns="http://www.appian.com/ae/types/2009"
-    xmlns:a="http://www.appian.com/ae/types/2009"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <process_model_port xmlns="http://www.appian.com/ae/types/2009" xmlns:a="http://www.appian.com/ae/types/2009" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="007.000.001">
     <pm>
       <meta>
         <uuid><![CDATA[0003d260-2af2-8000-0aa8-820000820000]]></uuid>
@@ -50,7 +47,10 @@
             </pair>
           </string-map>
         </desc>
+        <version><![CDATA[1.0]]></version>
         <versionStatus>2</versionStatus>
+        <latestVersion><![CDATA[1.0]]></latestVersion>
+        <state id="14"/>
         <process-name>
           <string-map>
             <pair>
@@ -233,8 +233,7 @@
             <name><![CDATA[End Node]]></name>
             <acps>
               <acp name="pmID">
-                <a:value a:id="0003d260-2acb-8000-0aa8-820000820000"
-                  xmlns="" xsi:type="a:ProcessModel"/>
+                <a:value xmlns="" a:id="0003d260-2acb-8000-0aa8-820000820000" xsi:type="a:ProcessModel"/>
                 <a:local-id>0</a:local-id>
                 <a:expr/>
                 <a:required>0</a:required>
@@ -510,4 +509,4 @@
     </pm>
   </process_model_port>
   <isPublished>true</isPublished>
-</processModelHaul>
+</processModelHaul><!--updated on 2017-01-04T10:30:56.780-->

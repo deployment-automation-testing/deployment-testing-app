@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <group>
         <name>Application Users</name>
         <securityMap>SECURITYMAP_PERSONAL</securityMap>
@@ -31,4 +30,4 @@
             </conditions>
         </expressions>
     </ruleSet>
-</groupHaul>
+</groupHaul><!--updated on 2017-01-04T10:30:56.808-->

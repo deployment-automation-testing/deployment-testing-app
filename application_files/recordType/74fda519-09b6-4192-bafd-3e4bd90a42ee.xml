@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <recordType name="Commit" a:uuid="74fda519-09b6-4192-bafd-3e4bd90a42ee">
+<?xml version="1.0" encoding="UTF-8"?><recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <recordType a:uuid="74fda519-09b6-4192-bafd-3e4bd90a42ee" name="Commit">
         <a:pluralName>Commits</a:pluralName>
         <a:description>All commits that have been created on Sprints. Source from Entity</a:description>
         <a:urlStub>commit</a:urlStub>
-        <a:source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:DataStoreEntity" a:uuid="b285c4ed-eac8-49c5-8507-cdeb75366164@_a-0000d570-2b75-8000-2728-820000820000_2081"/>
-        <a:listViewTemplateExpr>#&quot;SYSTEM_SYSRULES_listViewItem&quot;(&#xD;
-  image:#&quot;_a-0000d552-52d7-8000-4b9d-010000010000_615&quot;, &#xD;
-  title:rf!desc, &#xD;
-  details:rf!jiraLink, &#xD;
-  timestamp:now()&#xD;
+        <a:source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" a:uuid="b285c4ed-eac8-49c5-8507-cdeb75366164@_a-0000d570-2b75-8000-2728-820000820000_2081" xsi:type="a:DataStoreEntity"/>
+        <a:listViewTemplateExpr>#"SYSTEM_SYSRULES_listViewItem"(&#13;
+  image:#"_a-0000d552-52d7-8000-4b9d-010000010000_615", &#13;
+  title:rf!desc, &#13;
+  details:rf!jiraLink, &#13;
+  timestamp:now()&#13;
 )</a:listViewTemplateExpr>
         <a:fieldCfg name="Title">
             <a:sourceRef>desc</a:sourceRef>
@@ -18,24 +17,24 @@
             <a:isFacet>true</a:isFacet>
             <a:facetType>CUSTOM_BUCKETS_CLOSED</a:facetType>
             <a:isExclusiveFacet>true</a:isExclusiveFacet>
-            <a:facetLabelExpr>=&quot;Commit Title&quot;</a:facetLabelExpr>
+            <a:facetLabelExpr>="Commit Title"</a:facetLabelExpr>
             <a:facetOption>
-                <a:labelExpr>=&quot;A&quot;</a:labelExpr>
+                <a:labelExpr>="A"</a:labelExpr>
                 <a:facetOperator>BETWEEN</a:facetOperator>
-                <a:lowerLimitExpr>=&quot;A&quot;</a:lowerLimitExpr>
-                <a:upperLimitExpr>=&quot;B&quot;</a:upperLimitExpr>
+                <a:lowerLimitExpr>="A"</a:lowerLimitExpr>
+                <a:upperLimitExpr>="B"</a:upperLimitExpr>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=&quot;B - C&quot;</a:labelExpr>
+                <a:labelExpr>="B - C"</a:labelExpr>
                 <a:facetOperator>BETWEEN</a:facetOperator>
-                <a:lowerLimitExpr>=&quot;B&quot;</a:lowerLimitExpr>
-                <a:upperLimitExpr>=&quot;D&quot;</a:upperLimitExpr>
+                <a:lowerLimitExpr>="B"</a:lowerLimitExpr>
+                <a:upperLimitExpr>="D"</a:upperLimitExpr>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=&quot;D - H&quot;</a:labelExpr>
+                <a:labelExpr>="D - H"</a:labelExpr>
                 <a:facetOperator>BETWEEN</a:facetOperator>
-                <a:lowerLimitExpr>=&quot;D&quot;</a:lowerLimitExpr>
-                <a:upperLimitExpr>=&quot;I&quot;</a:upperLimitExpr>
+                <a:lowerLimitExpr>="D"</a:lowerLimitExpr>
+                <a:upperLimitExpr>="I"</a:upperLimitExpr>
             </a:facetOption>
             <a:sortOrderIndex>0</a:sortOrderIndex>
             <a:facetOrderIndex>0</a:facetOrderIndex>
@@ -47,19 +46,19 @@
             <a:isFacet>true</a:isFacet>
             <a:facetType>CUSTOM_BUCKETS_CLOSED</a:facetType>
             <a:isExclusiveFacet>true</a:isExclusiveFacet>
-            <a:facetLabelExpr>=&quot;Sprint ID&quot;</a:facetLabelExpr>
+            <a:facetLabelExpr>="Sprint ID"</a:facetLabelExpr>
             <a:facetOption>
-                <a:labelExpr>=&quot;Mobility&quot;</a:labelExpr>
+                <a:labelExpr>="Mobility"</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
                 <a:values>1</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=&quot;Tempo UI&quot;</a:labelExpr>
+                <a:labelExpr>="Tempo UI"</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
                 <a:values>2</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=&quot;Records&quot;</a:labelExpr>
+                <a:labelExpr>="Records"</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
                 <a:values>4</a:values>
             </a:facetOption>
@@ -67,8 +66,8 @@
             <a:facetOrderIndex>1</a:facetOrderIndex>
         </a:fieldCfg>
         <a:detailViewCfg>
-            <a:nameExpr>=&quot;Summary&quot;</a:nameExpr>
-            <a:uiExpr>=#&quot;_a-0000d566-475b-8000-345d-010000010000_614&quot;()</a:uiExpr>
+            <a:nameExpr>="Summary"</a:nameExpr>
+            <a:uiExpr>=#"_a-0000d566-475b-8000-345d-010000010000_614"()</a:uiExpr>
             <a:visibilityExpr>=true()</a:visibilityExpr>
             <a:urlStub>summary</a:urlStub>
         </a:detailViewCfg>
@@ -93,4 +92,4 @@
             </groups>
         </role>
     </roleMap>
-</recordTypeHaul>
+</recordTypeHaul><!--updated on 2017-01-04T10:30:57.196-->
