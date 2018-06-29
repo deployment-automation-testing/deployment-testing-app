@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <processModelFolder>
         <name>Records</name>
         <uuid>_g-0000d579-c3c1-8000-8f2a-010000010000_44</uuid>
-        <description></description>
+        <description/>
         <parentFolderUuid>_g-0000d2b4-e7b7-8000-e588-880000880000_27</parentFolderUuid>
     </processModelFolder>
     <roleMap>
@@ -32,4 +31,4 @@
             <groups/>
         </role>
     </roleMap>
-</processModelFolderHaul>
+</processModelFolderHaul><!--updated on 2018-06-29T14:54:17.342-->

@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <recordType name="Company" a:uuid="e8233cf0-8fc7-4d5d-9f7a-52e26c38a80a">
+<?xml version="1.0" encoding="UTF-8"?><recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <recordType a:uuid="e8233cf0-8fc7-4d5d-9f7a-52e26c38a80a" name="Company">
         <a:pluralName>Companies</a:pluralName>
         <a:description>List of companies with facets to filter them. Source from Process Models</a:description>
         <a:urlStub>company</a:urlStub>
-        <a:source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0004d542-8bf3-8000-0ff4-010000010000"/>
-        <a:listViewTemplateExpr>#&quot;SYSTEM_SYSRULES_listViewItem&quot;(&#xD;
-  timestamp: rf!timestamp, &#xD;
-  image:rf!icon, &#xD;
-  title:rf!name, &#xD;
-  details:rf!details&#xD;
+        <a:source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" a:uuid="0004d542-8bf3-8000-0ff4-010000010000" xsi:type="a:ProcessModel"/>
+        <a:listViewTemplateExpr>#"SYSTEM_SYSRULES_listViewItem"(&#13;
+  timestamp: rf!timestamp, &#13;
+  image:rf!icon, &#13;
+  title:rf!name, &#13;
+  details:rf!details&#13;
 )</a:listViewTemplateExpr>
         <a:fieldCfg name="Name">
             <a:sourceRef>name</a:sourceRef>
@@ -18,21 +17,21 @@
             <a:isFacet>true</a:isFacet>
             <a:facetType>CUSTOM_BUCKETS_CLOSED</a:facetType>
             <a:isExclusiveFacet>true</a:isExclusiveFacet>
-            <a:facetLabelExpr>=&quot;Name&quot;</a:facetLabelExpr>
+            <a:facetLabelExpr>="Name"</a:facetLabelExpr>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[5]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[5]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[5]</a:values>
+                <a:values>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[5]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[10]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[10]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[10]</a:values>
+                <a:values>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[10]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[15]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[15]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d541-134e-8000-0ff0-010000010000_638&quot;[15]</a:values>
+                <a:values>=#"_a-0000d541-134e-8000-0ff0-010000010000_638"[15]</a:values>
             </a:facetOption>
             <a:sortOrderIndex>0</a:sortOrderIndex>
             <a:facetOrderIndex>0</a:facetOrderIndex>
@@ -44,26 +43,26 @@
             <a:isFacet>true</a:isFacet>
             <a:facetType>CUSTOM_BUCKETS_CLOSED</a:facetType>
             <a:isExclusiveFacet>true</a:isExclusiveFacet>
-            <a:facetLabelExpr>=&quot;Description&quot;</a:facetLabelExpr>
+            <a:facetLabelExpr>="Description"</a:facetLabelExpr>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[1]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[1]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[1]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[1]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[2]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[2]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[2]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[2]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[3]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[3]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[3]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[3]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=&quot;Not in &quot;&amp;#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[4]</a:labelExpr>
+                <a:labelExpr>="Not in "&amp;#"_a-0000d564-a92e-8000-a55c-010000010000_703"[4]</a:labelExpr>
                 <a:facetOperator>NOT_IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_703&quot;[4]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_703"[4]</a:values>
             </a:facetOption>
             <a:sortOrderIndex>1</a:sortOrderIndex>
             <a:facetOrderIndex>1</a:facetOrderIndex>
@@ -75,113 +74,113 @@
             <a:isFacet>true</a:isFacet>
             <a:facetType>CUSTOM_BUCKETS_CLOSED</a:facetType>
             <a:isExclusiveFacet>true</a:isExclusiveFacet>
-            <a:facetLabelExpr>=&quot;Baseball Teams&quot;</a:facetLabelExpr>
+            <a:facetLabelExpr>="Baseball Teams"</a:facetLabelExpr>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[1]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[1]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[1]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[1]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[2]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[2]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[2]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[2]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[3]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[3]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[3]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[3]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[4]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[4]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[4]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[4]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[5]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[5]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[5]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[5]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[6]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[6]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[6]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[6]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[7]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[7]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[7]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[7]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[8]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[8]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[8]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[8]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[9]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[9]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[9]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[9]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[10]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[10]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[10]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[10]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[11]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[11]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[11]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[11]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[12]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[12]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[12]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[12]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[13]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[13]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[13]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[13]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[14]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[14]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[14]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[14]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[15]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[15]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[15]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[15]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[16]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[16]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[16]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[16]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[17]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[17]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[17]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[17]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[18]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[18]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[18]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[18]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[19]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[19]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[19]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[19]</a:values>
             </a:facetOption>
             <a:facetOption>
-                <a:labelExpr>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[20]</a:labelExpr>
+                <a:labelExpr>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[20]</a:labelExpr>
                 <a:facetOperator>IN</a:facetOperator>
-                <a:values>=#&quot;_a-0000d564-a92e-8000-a55c-010000010000_738&quot;[20]</a:values>
+                <a:values>=#"_a-0000d564-a92e-8000-a55c-010000010000_738"[20]</a:values>
             </a:facetOption>
             <a:sortOrderIndex>2</a:sortOrderIndex>
             <a:facetOrderIndex>2</a:facetOrderIndex>
         </a:fieldCfg>
         <a:detailViewCfg>
-            <a:nameExpr>=&quot;Summary&quot;</a:nameExpr>
-            <a:uiExpr>=#&quot;_a-0000d566-475b-8000-345d-010000010000_616&quot;()</a:uiExpr>
+            <a:nameExpr>="Summary"</a:nameExpr>
+            <a:uiExpr>=#"_a-0000d566-475b-8000-345d-010000010000_616"()</a:uiExpr>
             <a:visibilityExpr>=true()</a:visibilityExpr>
             <a:urlStub>summary</a:urlStub>
         </a:detailViewCfg>
@@ -200,4 +199,4 @@
             </groups>
         </role>
     </roleMap>
-</recordTypeHaul>
+</recordTypeHaul><!--updated on 2018-06-29T14:54:17.360-->

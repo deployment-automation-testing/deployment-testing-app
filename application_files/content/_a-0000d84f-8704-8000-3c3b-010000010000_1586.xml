@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_FloatingPointField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1586</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,37 +14,37 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!floatingPointField_label: &quot;label&quot;,
-  local!floatingPointField_instructions: &quot;instructions&quot;, 
-  local!floatingPointField_value: &quot;1234.5678&quot;,
+  local!floatingPointField_label: "label",
+  local!floatingPointField_instructions: "instructions", 
+  local!floatingPointField_value: "1234.5678",
   with(
 		local!floatingPointField_decimalValue: todecimal(local!floatingPointField_value), 
-		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Dynamic Sail Component&quot;,
+		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Dynamic Sail Component",
           columns: {
-            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+            #"SYSTEM_SYSRULES_columnLayout"(
               contents: {
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Label&quot;,
-                  instructions: &quot;Enter text for the dynamic Label value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Label",
+                  instructions: "Enter text for the dynamic Label value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!floatingPointField_label,
                   saveInto: local!floatingPointField_label
                 ),
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Instructions&quot;,
-                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Instructions",
+                  instructions: "Enter text for the dynamic Instructions value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!floatingPointField_instructions,
                   saveInto: local!floatingPointField_instructions
                 ),               
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Value&quot;,
-                  instructions: &quot;Enter text for the dynamic Value value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Value",
+                  instructions: "Enter text for the dynamic Value value",
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -55,10 +54,10 @@
 				 
               }
             ),
-			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+			#"SYSTEM_SYSRULES_columnLayout"(
               contents: {
 			  
-			  #&quot;SYSTEM_SYSRULES_textField&quot;(
+			  #"SYSTEM_SYSRULES_textField"(
                   label: local!floatingPointField_label,
                   instructions: local!floatingPointField_instructions,                 
                   value: local!floatingPointField_decimalValue,
@@ -105,4 +104,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:54:17.496-->

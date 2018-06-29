@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>uiCompaniesFacets</name>
         <uuid>_a-0000d566-475b-8000-345d-010000010000_616</uuid>
@@ -15,7 +14,7 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>=load(
-readonly: not(#&quot;_a-0000d6f5-c20a-8000-bd70-010000010000_1375&quot;),
+readonly: not(#"_a-0000d6f5-c20a-8000-bd70-010000010000_1375"),
 description,
 established: today() - 360*rand()*30,
 street,
@@ -28,8 +27,8 @@ zip: 20190 + round(rand()*10, 0),
     'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
       contents: {
       'type!{http://www.appian.com/ae/types/2009}TextField'(
-        label: &quot;Name of the company&quot;, 
-	instructions: street &amp; joinarray({&quot; #&quot; &amp; number, city, upper(country), zip}, &quot;. &quot;), 
+        label: "Name of the company", 
+	instructions: street &amp; joinarray({" #" &amp; number, city, upper(country), zip}, ". "), 
 	required: true(), 
 	readOnly: readonly, 
 	disabled: false(), 
@@ -37,8 +36,8 @@ zip: 20190 + round(rand()*10, 0),
 	saveInto: rf!name
 	),
       'type!{http://www.appian.com/ae/types/2009}ParagraphField'(
-        label: &quot;Description&quot;, 
-	instructions: &quot;What does the company do since &quot;&amp;established&amp;&quot;?&quot;,  
+        label: "Description", 
+	instructions: "What does the company do since "&amp;established&amp;"?",  
 	required: false(), 
 	readOnly: readonly, 
 	disabled: false(), 
@@ -46,14 +45,14 @@ zip: 20190 + round(rand()*10, 0),
 	saveInto: description
 	),
       'type!{http://www.appian.com/ae/types/2009}SectionLayout'(
-        label: &quot;More Info&quot;, 
+        label: "More Info", 
         content: 
           'type!{http://www.appian.com/ae/types/2009}ColumnArrayLayout'(
 	    columns: {
 	    'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
 	      contents: {
 	      'type!{http://www.appian.com/ae/types/2009}DateField'(
-	        label: &quot;Established&quot;, 
+	        label: "Established", 
 		required: false(), 
 		readOnly: readonly, 
 		disabled: false(),
@@ -61,24 +60,24 @@ zip: 20190 + round(rand()*10, 0),
 		saveInto: established
 		),
 	      'type!{http://www.appian.com/ae/types/2009}LinkField'(
-	        label: &quot;Website&quot;, 
-		links: {label:rf!name, uri:&quot;http://www.&quot;&amp;stripwith(rf!name,&quot; &quot;)&amp;&quot;.com&quot;}
+	        label: "Website", 
+		links: {label:rf!name, uri:"http://www."&amp;stripwith(rf!name," ")&amp;".com"}
 		),
 	      'type!{http://www.appian.com/ae/types/2009}FileUploadField'(
-	        label: &quot;Icon&quot;, 
-		instructions: &quot;Upload a new icon&quot;, 
+	        label: "Icon", 
+		instructions: "Upload a new icon", 
 		required: false(), 
 		disabled: false(), 
-		uploadUrl: &quot;https://matasano.appianci.net/suite/api/tempo/file&quot;, 
-		saveInto: &quot;&quot;
+		uploadUrl: "https://matasano.appianci.net/suite/api/tempo/file", 
+		saveInto: ""
 		)
      })}))
      }),
      'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
        contents: {
         'type!{http://www.appian.com/ae/types/2009}TextField'(
-	  label: &quot;Street Address&quot;, 
-	  instructions: &quot;&quot;, 
+	  label: "Street Address", 
+	  instructions: "", 
 	  required: false(), 
 	  readOnly: readonly, 
 	  disabled: false(), 
@@ -86,8 +85,8 @@ zip: 20190 + round(rand()*10, 0),
 	  saveInto: street
 	  ),
         'type!{http://www.appian.com/ae/types/2009}IntegerField'(
-	  label: &quot;Number&quot;, 
-	  instructions: &quot;&quot;, 
+	  label: "Number", 
+	  instructions: "", 
 	  required: false(), 
 	  readOnly: readonly, 
 	  disabled: false(), 
@@ -95,8 +94,8 @@ zip: 20190 + round(rand()*10, 0),
 	  saveInto: number
 	  ),
         'type!{http://www.appian.com/ae/types/2009}TextField'(
-	  label: &quot;City&quot;, 
-	  instructions: &quot;&quot;, 
+	  label: "City", 
+	  instructions: "", 
 	  required: false(), 
 	  readOnly: readonly, 
 	  disabled: false(), 
@@ -104,8 +103,8 @@ zip: 20190 + round(rand()*10, 0),
 	  saveInto: city
 	  ),
         'type!{http://www.appian.com/ae/types/2009}TextField'(
-	  label: &quot;Country&quot;, 
-	  instructions: &quot;&quot;, 
+	  label: "Country", 
+	  instructions: "", 
 	  required: false(), 
 	  readOnly: readonly, 
 	  disabled: false(), 
@@ -113,8 +112,8 @@ zip: 20190 + round(rand()*10, 0),
 	  saveInto: country
 	  ),
         'type!{http://www.appian.com/ae/types/2009}IntegerField'(
-	  label: &quot;ZIP&quot;, 
-	  instructions: &quot;&quot;, 
+	  label: "ZIP", 
+	  instructions: "", 
 	  required: false(), 
 	  readOnly: readonly, 
 	  disabled: false(), 
@@ -157,4 +156,4 @@ zip: 20190 + round(rand()*10, 0),
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:54:17.309-->
