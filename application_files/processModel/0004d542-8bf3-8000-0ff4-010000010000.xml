@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <processModelHaul>
   <folderUuid>_g-0000d579-c3c1-8000-8f2a-010000010000_44</folderUuid>
   <roleMap>
@@ -32,7 +32,10 @@
       <groups/>
     </role>
   </roleMap>
-  <process_model_port xmlns="http://www.appian.com/ae/types/2009" xmlns:a="http://www.appian.com/ae/types/2009" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="007.000.001">
+  <process_model_port schemaVersion="007.000.001"
+    xmlns="http://www.appian.com/ae/types/2009"
+    xmlns:a="http://www.appian.com/ae/types/2009"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <pm>
       <meta>
         <uuid><![CDATA[0004d542-8bf3-8000-0ff4-010000010000]]></uuid>
@@ -959,4 +962,4 @@
     </pm>
   </process_model_port>
   <isPublished>true</isPublished>
-</processModelHaul><!--updated on 2018-06-28T14:53:54.918-->
+</processModelHaul>

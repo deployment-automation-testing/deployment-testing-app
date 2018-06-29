@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_TextField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1563</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,89 +15,89 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!textField_label: "label",
-  local!textField_instructions: "instructions",
+  local!textField_label: &quot;label&quot;,
+  local!textField_instructions: &quot;instructions&quot;,
   local!textField_required: {2},
   local!textField_readOnly: {2},
   local!textField_disabled: {2},
-  local!textField_refreshAfter: "null",
-  local!textField_value: "value",
+  local!textField_refreshAfter: &quot;null&quot;,
+  local!textField_value: &quot;value&quot;,
   with(
 		
-		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-          label: "Dynamic Sail Component",
+		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+          label: &quot;Dynamic Sail Component&quot;,
           columns: {
-            #"SYSTEM_SYSRULES_columnLayout"(
+            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Label",
-                  instructions: "Enter text for the dynamic Label value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Label&quot;,
+                  instructions: &quot;Enter text for the dynamic Label value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!textField_label,
                   saveInto: local!textField_label
                 ),
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Instructions",
-                  instructions: "Enter text for the dynamic Instructions value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Instructions&quot;,
+                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!textField_instructions,
                   saveInto: local!textField_instructions
                 ),
-                #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Required",
-                  instructions: "Select the True, False, or Null() value",
+                #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Required&quot;,
+                  instructions: &quot;Select the True, False, or Null() value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "True",
-                    "False",
-					"Null"
+                    &quot;True&quot;,
+                    &quot;False&quot;,
+					&quot;Null&quot;
                   },
                   value: local!textField_required,
                   saveInto: local!textField_required
                 ),
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "ReadOnly",
-                  instructions: "Select the True, False, or Null() value",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;ReadOnly&quot;,
+                  instructions: &quot;Select the True, False, or Null() value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "True",
-                    "False",
-					"Null"
+                    &quot;True&quot;,
+                    &quot;False&quot;,
+					&quot;Null&quot;
                   },
                   value: local!textField_readOnly,
                   saveInto: local!textField_readOnly
                 ),
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Disabled",
-                  instructions: "Select the dynamic disabled value",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Disabled&quot;,
+                  instructions: &quot;Select the dynamic disabled value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "True",
-                    "False",
-					"Null"
+                    &quot;True&quot;,
+                    &quot;False&quot;,
+					&quot;Null&quot;
                   },
                   value: local!textField_disabled,
                   saveInto: local!textField_disabled
                 ),
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Refresh After",
-                  instructions: "Enter text for the dynamic refreshAfter value: (KEYPRESS, UNFOCUS, SUBMIT, null)",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Refresh After&quot;,
+                  instructions: &quot;Enter text for the dynamic refreshAfter value: (KEYPRESS, UNFOCUS, SUBMIT, null)&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!textField_refreshAfter,
                   saveInto: local!textField_refreshAfter
                 ),
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Value",
-                  instructions: "Enter text for the dynamic Value value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Value&quot;,
+                  instructions: &quot;Enter text for the dynamic Value value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -106,16 +107,16 @@
 				 
               }
             ),
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
 			  
-			  #"SYSTEM_SYSRULES_textField"(
+			  #&quot;SYSTEM_SYSRULES_textField&quot;(
                   label: local!textField_label,
                   instructions: local!textField_instructions,
-                  required: if(local!textField_required=1,"true",if(local!textField_required=2,"false",null())),
-                  readOnly: if(local!textField_readOnly=1,"true",if(local!textField_readOnly=2,"false",null())),
-                  disabled: if(local!textField_disabled=1,"true",if(local!textField_disabled=2,"false",null())),
-				  refreshAfter: if(local!textField_refreshAfter="null",null(),local!textField_refreshAfter),
+                  required: if(local!textField_required=1,&quot;true&quot;,if(local!textField_required=2,&quot;false&quot;,null())),
+                  readOnly: if(local!textField_readOnly=1,&quot;true&quot;,if(local!textField_readOnly=2,&quot;false&quot;,null())),
+                  disabled: if(local!textField_disabled=1,&quot;true&quot;,if(local!textField_disabled=2,&quot;false&quot;,null())),
+				  refreshAfter: if(local!textField_refreshAfter=&quot;null&quot;,null(),local!textField_refreshAfter),
                   value: local!textField_value,
                   saveInto: local!textField_value
                 )
@@ -160,4 +161,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-06-28T14:53:54.886-->
+</contentHaul>
