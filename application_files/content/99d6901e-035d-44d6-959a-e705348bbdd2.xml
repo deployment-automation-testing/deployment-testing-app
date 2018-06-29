@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rulesFolder>
-        <name>Records</name>
-        <uuid>_a-0000d552-52d7-8000-4b9d-010000010000_614</uuid>
-        <description/>
-        <parentUuid>_a-0000d516-ce42-8000-11d1-010000010000_542</parentUuid>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <rule>
+        <name>inYourFaceInterface</name>
+        <uuid>99d6901e-035d-44d6-959a-e705348bbdd2</uuid>
+        <description></description>
+        <parentUuid>_a-0000db6d-fe6f-8000-fb7f-010000010000_1609</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -13,7 +14,10 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-    </rulesFolder>
+        <definition>={}</definition>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
     <roleMap public="true">
         <role allowForAll="false" inherit="true" name="readers">
             <users/>
@@ -24,7 +28,9 @@
             <groups/>
         </role>
         <role allowForAll="false" inherit="true" name="administrators">
-            <users/>
+            <users>
+                <userUuid>Administrator</userUuid>
+            </users>
             <groups/>
         </role>
         <role allowForAll="false" inherit="false" name="denyReaders">
@@ -40,4 +46,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-06-29T13:56:45.269-->
+</contentHaul>

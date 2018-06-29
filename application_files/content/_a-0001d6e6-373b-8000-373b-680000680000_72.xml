@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rulesFolder>
-        <name>Records</name>
-        <uuid>_a-0000d552-52d7-8000-4b9d-010000010000_614</uuid>
-        <description/>
-        <parentUuid>_a-0000d516-ce42-8000-11d1-010000010000_542</parentUuid>
+        <name>Related Actions Rules</name>
+        <uuid>_a-0001d6e6-373b-8000-373b-680000680000_72</uuid>
+        <description></description>
+        <parentUuid>_a-0000d552-52d7-8000-4b9d-010000010000_614</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -24,7 +25,9 @@
             <groups/>
         </role>
         <role allowForAll="false" inherit="true" name="administrators">
-            <users/>
+            <users>
+                <userUuid>Administrator</userUuid>
+            </users>
             <groups/>
         </role>
         <role allowForAll="false" inherit="false" name="denyReaders">
@@ -40,4 +43,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-06-29T13:56:45.269-->
+</contentHaul>

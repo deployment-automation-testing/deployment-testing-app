@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <group>
-        <name>Process Model Creators</name>
+        <name>Portal Administrators</name>
         <securityMap>SECURITYMAP_TEAM</securityMap>
-        <uuid>SYSTEM_GROUP_PROCESS_MODEL_CREATORS</uuid>
+        <uuid>SYSTEM_GROUP_PORTAL_ADMINISTRATORS</uuid>
         <groupTypeUuid>SYSTEM_GROUP_TYPE_CUSTOM</groupTypeUuid>
-        <description>Members of this group will be able to create new process models</description>
+        <description>Administrators of Portal Pages and Categories</description>
         <delegatedCreation>false</delegatedCreation>
         <memberPolicy>MEMBERPOLICY_CLOSED</memberPolicy>
         <viewingPolicy>VIEWINGPOLICY_LOW</viewingPolicy>
         <attributes/>
     </group>
     <members>
-        <users/>
+        <users>
+            <userUuid>Administrator</userUuid>
+        </users>
         <groups/>
     </members>
     <admins>
@@ -21,4 +24,4 @@
         <groups/>
     </admins>
     <ruleSet/>
-</groupHaul><!--updated on 2018-06-29T13:56:45.233-->
+</groupHaul>

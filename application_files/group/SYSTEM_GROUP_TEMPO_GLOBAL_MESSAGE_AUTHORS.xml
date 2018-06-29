@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <group>
-        <name>Application Users</name>
+        <name>Tempo Global Message Authors</name>
         <securityMap>SECURITYMAP_PERSONAL</securityMap>
-        <uuid>SYSTEM_GROUP_ROLE_APPLICATION_USERS</uuid>
+        <uuid>SYSTEM_GROUP_TEMPO_GLOBAL_MESSAGE_AUTHORS</uuid>
         <groupTypeUuid>SYSTEM_GROUP_TYPE_CUSTOM</groupTypeUuid>
-        <description>Members of this group will be able to use applications exposed through the applications portal, but do not have permission to use the designer interface.</description>
+        <description>Members of this group will be able to post messages to everyone</description>
         <delegatedCreation>false</delegatedCreation>
         <memberPolicy>MEMBERPOLICY_CLOSED</memberPolicy>
         <viewingPolicy>VIEWINGPOLICY_HIGH</viewingPolicy>
@@ -24,10 +25,10 @@
         <expressions>
             <entityTypeName>u</entityTypeName>
             <conditions>
-                <attributeName>userTypeName</attributeName>
-                <operatorId>1</operatorId>
-                <value>User</value>
+                <attributeName>username</attributeName>
+                <operatorId>9</operatorId>
+                <value>.d</value>
             </conditions>
         </expressions>
     </ruleSet>
-</groupHaul><!--updated on 2018-06-29T13:56:45.172-->
+</groupHaul>
