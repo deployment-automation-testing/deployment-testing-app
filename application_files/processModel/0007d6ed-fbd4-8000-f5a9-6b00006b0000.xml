@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <processModelHaul>
   <folderUuid>_g-0001d6a2-80ce-8000-80ce-6b00006b0000_1</folderUuid>
   <roleMap>
@@ -31,10 +31,7 @@
       <groups/>
     </role>
   </roleMap>
-  <process_model_port schemaVersion="007.000.001"
-    xmlns="http://www.appian.com/ae/types/2009"
-    xmlns:a="http://www.appian.com/ae/types/2009"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <process_model_port xmlns="http://www.appian.com/ae/types/2009" xmlns:a="http://www.appian.com/ae/types/2009" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="007.000.001">
     <pm>
       <meta>
         <uuid><![CDATA[0007d6ed-fbd4-8000-f5a9-6b00006b0000]]></uuid>
@@ -3725,8 +3722,7 @@
               <name><![CDATA[Publish or Import]]></name>
               <desc/>
               <rules/>
-              <schedule absoluteDelay="false"
-                isAbsoluteOrRelative="true" isRecurring="false">
+              <schedule absoluteDelay="false" isAbsoluteOrRelative="true" isRecurring="false">
                 <interval>
                   <minutes>0</minutes>
                 </interval>
@@ -3817,4 +3813,4 @@
     </pm>
   </process_model_port>
   <isPublished>true</isPublished>
-</processModelHaul>
+</processModelHaul><!--updated on 2018-06-29T14:00:22.467-->

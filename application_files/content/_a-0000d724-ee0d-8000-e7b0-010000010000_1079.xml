@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>reportDropdownField</name>
         <uuid>_a-0000d724-ee0d-8000-e7b0-010000010000_1079</uuid>
@@ -15,213 +14,213 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>
-#&quot;SYSTEM_SYSRULES_dashboardLayout&quot;(
+#"SYSTEM_SYSRULES_dashboardLayout"(
   firstColumnContents: {
-    #&quot;SYSTEM_SYSRULES_sectionLayout&quot;(
-      label: &quot;Two Columns&quot;,
+    #"SYSTEM_SYSRULES_sectionLayout"(
+      label: "Two Columns",
       firstColumnContents: {
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;Standard single-select dropdown with instructions&quot;,
-          choiceLabels: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "Standard single-select dropdown with instructions",
+          choiceLabels: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
-        #&quot;SYSTEM_SYSRULES_textField&quot;(
-          label: &quot;Text&quot;,
-          instructions: &quot;Standard text input to compare styling with dropdown (re. FF/Win dropdown cutoff bug)&quot;
+        #"SYSTEM_SYSRULES_textField"(
+          label: "Text",
+          instructions: "Standard text input to compare styling with dropdown (re. FF/Win dropdown cutoff bug)"
         ),
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          choiceLabels: {&quot;&quot;}
+          choiceLabels: {""}
         ),
-        #&quot;SYSTEM_SYSRULES_textField&quot;(
-          label: &quot;Note&quot;,
+        #"SYSTEM_SYSRULES_textField"(
+          label: "Note",
           readOnly: true,
-          value: &quot;Directly above is a dropdown field with no label, instructions, or dropdown options&quot;
+          value: "Directly above is a dropdown field with no label, instructions, or dropdown options"
         ),
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          label: &quot;Disabled&quot;,
-          instructions: &quot; Disabled single-select dropdown&quot;,
+          label: "Disabled",
+          instructions: " Disabled single-select dropdown",
           disabled: true,
-          choiceLabels: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choiceLabels: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
-        #&quot;SYSTEM_SYSRULES_multipleDropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_multipleDropdownFieldByIndex"(
           value: 1,
-          label: &quot;Disabled&quot;,
-          instructions: &quot;Disabled multi-select dropdown&quot;,
+          label: "Disabled",
+          instructions: "Disabled multi-select dropdown",
           disabled: true,
-          choiceLabels: {&quot;Beige&quot;, &quot;Black&quot;, &quot;Blue&quot;, &quot;Brown&quot;,&quot;Gold&quot;, &quot;Gray&quot;, &quot;Green&quot;,&quot;Orange&quot;,&quot;Pink&quot;, &quot;Purple&quot;&quot;Red&quot;, &quot;Silver&quot;, &quot;White&quot;, &quot;Yellow&quot;}
+          choiceLabels: {"Beige", "Black", "Blue", "Brown","Gold", "Gray", "Green","Orange","Pink", "Purple""Red", "Silver", "White", "Yellow"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Read-Only&quot;,
-          instructions: &quot;Read-only single-select dropdown&quot;,
+          label: "Read-Only",
+          instructions: "Read-only single-select dropdown",
           readOnly: true,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Disabled and Read-Only&quot;,
-          instructions: &quot;Read-only and disabled single-select dropdown&quot;,
+          label: "Disabled and Read-Only",
+          instructions: "Read-only and disabled single-select dropdown",
           readOnly: true,
           disabled: true,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         )
       },
       secondColumnContents: {
-        #&quot;SYSTEM_SYSRULES_multipleDropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_multipleDropdownFieldByIndex"(
           value: 2,
-          label: &quot;Colors&quot;,
-          instructions: &quot;Multi-select dropdown with instructions&quot;,
-          choiceLabels: {&quot;Beige&quot;,&quot;Black&quot;,&quot;Blue&quot;,&quot;Brown&quot;,&quot;Gold&quot;,&quot;Gray&quot;,&quot;Green&quot;,&quot;Orange&quot;,&quot;Pink&quot;,&quot;Purple&quot;, &quot;Red&quot;,    &quot;Silver&quot;, &quot;White&quot;,  &quot;Yellow&quot;}
+          label: "Colors",
+          instructions: "Multi-select dropdown with instructions",
+          choiceLabels: {"Beige","Black","Blue","Brown","Gold","Gray","Green","Orange","Pink","Purple", "Red",    "Silver", "White",  "Yellow"}
         ),
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          label: &quot;No Options&quot;,
-          choiceLabels: {&quot;&quot;}
+          label: "No Options",
+          choiceLabels: {""}
         ),
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;Blank first option&quot;,
-          choiceLabels: {&quot;&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;American Motors&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "Blank first option",
+          choiceLabels: {"", "Acura", "Alfa", "American Motors", "Astin Martin", "Audi"}
         ),
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
           value: 1,
-          label: &quot;Long Labels&quot;,
-          instructions: &quot;Single-select dropdown with long labels&quot;,
+          label: "Long Labels",
+          instructions: "Single-select dropdown with long labels",
           choiceLabels: {
-            &quot;https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0&quot;,
-            &quot;Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea&quot;
+            "https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0",
+            "Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea"
           }
         ),
-        #&quot;SYSTEM_SYSRULES_multipleDropdownFieldByIndex&quot;(
+        #"SYSTEM_SYSRULES_multipleDropdownFieldByIndex"(
           value: 1,
-          label: &quot;Long Labels&quot;,
-          instructions: &quot;Multi-select dropdown with long labels&quot;,
+          label: "Long Labels",
+          instructions: "Multi-select dropdown with long labels",
           choiceLabels: {
-            &quot;https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0&quot;,
-            &quot;Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea&quot;
-          }
-        )
-      }
-    ),
-    #&quot;SYSTEM_SYSRULES_sectionLayout&quot;(
-      label: &quot;One Column&quot;,
-      firstColumnContents: {
-        #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
-          value: 1,
-          label: &quot;One-Column&quot;,
-          choiceLabels: {
-            &quot;https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0&quot;,
-            &quot;Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea&quot;
+            "https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0",
+            "Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea"
           }
         )
       }
     ),
-    #&quot;SYSTEM_SYSRULES_sectionLayout&quot;(
-      label: &quot;Alignment&quot;,
+    #"SYSTEM_SYSRULES_sectionLayout"(
+      label: "One Column",
+      firstColumnContents: {
+        #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
+          value: 1,
+          label: "One-Column",
+          choiceLabels: {
+            "https://docs.google.com/a/appian.com/spreadsheet/ccc?key=0Aj0nVO-zhfbudDFlZG5OTWVOcURLXzctdGExSG1rM1E#gid=0",
+            "Lorem ipsum dolor sit amet brute tritani et vel amet conceptam no nec in pri hinc iusto timeam an minimum officiis concludaturque sed id summo labore possit mea ignota hendrerit vix cu id docendi elaboraret sea"
+          }
+        )
+      }
+    ),
+    #"SYSTEM_SYSRULES_sectionLayout"(
+      label: "Alignment",
       firstColumnContents: {
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;align: not configured&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "align: not configured",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;align: null&quot;,
+          label: "Make",
+          instructions: "align: null",
           align: null,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;align: LEFT&quot;,
-          align: &quot;LEFT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "align: LEFT",
+          align: "LEFT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;align: CENTER&quot;,
-          align: &quot;CENTER&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "align: CENTER",
+          align: "CENTER",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Make&quot;,
-          instructions: &quot;align: RIGHT&quot;,
-          align: &quot;RIGHT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          label: "Make",
+          instructions: "align: RIGHT",
+          align: "RIGHT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         )
       },
       secondColumnContents: {
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;ReadOnly Make&quot;,
+          label: "ReadOnly Make",
           readOnly: true,
-          instructions: &quot;align: null&quot;,
+          instructions: "align: null",
           align: null,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;ReadOnly Make&quot;,
+          label: "ReadOnly Make",
           readOnly: true,
-          instructions: &quot;align: LEFT&quot;,
-          align: &quot;LEFT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: LEFT",
+          align: "LEFT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;ReadOnly Make&quot;,
+          label: "ReadOnly Make",
           readOnly: true,
-          instructions: &quot;align: CENTER&quot;,
-          align: &quot;CENTER&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: CENTER",
+          align: "CENTER",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;ReadOnly Make&quot;,
+          label: "ReadOnly Make",
           readOnly: true,
-          instructions: &quot;align: RIGHT&quot;,
-          align: &quot;RIGHT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: RIGHT",
+          align: "RIGHT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Disabled Make&quot;,
+          label: "Disabled Make",
           disabled: true,
-          instructions: &quot;align: null&quot;,
+          instructions: "align: null",
           align: null,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Disabled Make&quot;,
+          label: "Disabled Make",
           disabled: true,
-          instructions: &quot;align: LEFT&quot;,
-          align: &quot;LEFT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: LEFT",
+          align: "LEFT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Disabled Make&quot;,
+          label: "Disabled Make",
           disabled: true,
-          instructions: &quot;align: CENTER&quot;,
-          align: &quot;CENTER&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: CENTER",
+          align: "CENTER",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         ),
         'type!{http://www.appian.com/ae/types/2009}DropdownField'(
           value: 1,
-          label: &quot;Disabled Make&quot;,
+          label: "Disabled Make",
           disabled: true,
-          instructions: &quot;align: RIGHT&quot;,
-          align: &quot;RIGHT&quot;,
-          choices: {&quot;Select Make&quot;, &quot;Acura&quot;, &quot;Alfa&quot;, &quot;Americas&quot;, &quot;Astin Martin&quot;, &quot;Audi&quot;}
+          instructions: "align: RIGHT",
+          align: "RIGHT",
+          choices: {"Select Make", "Acura", "Alfa", "Americas", "Astin Martin", "Audi"}
         )
       }
     )
@@ -257,4 +256,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:00:22.371-->

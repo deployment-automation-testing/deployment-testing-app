@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>RandomDate</name>
         <uuid>0001d0c2-6913-8000-6913-73fb5173fb51</uuid>
-        <description></description>
+        <description/>
         <parentUuid>0000d0c2-713f-8000-6913-73fb5173fb51</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -44,4 +43,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:00:22.636-->

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema targetNamespace="https://gwt-grid.appianci.net/suite/types/"
-  xmlns:tns="https://gwt-grid.appianci.net/suite/types/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://gwt-grid.appianci.net/suite/types/" targetNamespace="https://gwt-grid.appianci.net/suite/types/">
   <xsd:include schemaLocation="%7Bhttps%3A%2F%2Fgwt-grid.appianci.net%2Fsuite%2Ftypes%2F%7DgwtpgPeople.xsd"/>
   <xsd:complexType name="gwtpgEmployee">
     <xsd:sequence>
@@ -12,8 +11,7 @@
           <xsd:appinfo source="appian.jpa">@Id @GeneratedValue</xsd:appinfo>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MultiText"
-        nillable="true" type="xsd:string"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MultiText" nillable="true" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
-</xsd:schema>
+</xsd:schema><!--updated on 2018-06-29T14:00:22.616-->

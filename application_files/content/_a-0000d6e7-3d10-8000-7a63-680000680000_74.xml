@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>recordDetailExpression</name>
         <uuid>_a-0000d6e7-3d10-8000-7a63-680000680000_74</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0001d6e6-373b-8000-373b-680000680000_72</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,19 +13,19 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>'type!{http://www.appian.com/ae/types/2009}SectionLayout' (label: &quot;About&quot;, content: 
+        <definition>'type!{http://www.appian.com/ae/types/2009}SectionLayout' (label: "About", content: 
   'type!{http://www.appian.com/ae/types/2009}ColumnArrayLayout'(
     columns: {
       'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
         contents: {
-          'type!{http://www.appian.com/ae/types/2009}TextField'(label: &quot;Industry&quot;, value: &quot;Retail&quot;),
-          'type!{http://www.appian.com/ae/types/2009}TextField'(label: &quot;Region&quot;, value: &quot;North America Commercial&quot;)
+          'type!{http://www.appian.com/ae/types/2009}TextField'(label: "Industry", value: "Retail"),
+          'type!{http://www.appian.com/ae/types/2009}TextField'(label: "Region", value: "North America Commercial")
         }
       ),
       'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
         contents: {
-          'type!{http://www.appian.com/ae/types/2009}TextField'(label: &quot;Competitors&quot;, value: &quot;IBM/Lombardi&quot;),
-          'type!{http://www.appian.com/ae/types/2009}TextField'(label: &quot;Client Since&quot;, value: &quot;April 15, 2009&quot; )
+          'type!{http://www.appian.com/ae/types/2009}TextField'(label: "Competitors", value: "IBM/Lombardi"),
+          'type!{http://www.appian.com/ae/types/2009}TextField'(label: "Client Since", value: "April 15, 2009" )
         }
       )
     }
@@ -64,4 +63,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:00:22.359-->

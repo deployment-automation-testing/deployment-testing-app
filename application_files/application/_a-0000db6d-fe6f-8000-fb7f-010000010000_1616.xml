@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <application>
         <name>No DDL - Add + Modify</name>
         <uuid>_a-0000db6d-fe6f-8000-fb7f-010000010000_1616</uuid>
-        <description></description>
+        <description/>
         <parentUuid>SYSTEM_APPLICATIONS_ROOT</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -214,4 +213,4 @@
             </role>
         </contentRoleMap>
     </roleMap>
-</applicationHaul>
+</applicationHaul><!--updated on 2018-06-29T14:00:22.649-->

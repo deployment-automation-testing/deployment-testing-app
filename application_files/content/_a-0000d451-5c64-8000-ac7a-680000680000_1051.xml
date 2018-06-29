@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>ONE_PASSWORD</name>
         <uuid>_a-0000d451-5c64-8000-ac7a-680000680000_1051</uuid>
@@ -48,4 +47,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-06-29T14:00:22.642-->

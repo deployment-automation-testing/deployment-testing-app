@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema targetNamespace="https://gwt-grid.appianci.net/suite/types/"
-  xmlns:tns="https://gwt-grid.appianci.net/suite/types/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://gwt-grid.appianci.net/suite/types/" targetNamespace="https://gwt-grid.appianci.net/suite/types/">
   <xsd:complexType name="gwtpgPeople">
     <xsd:sequence>
       <xsd:element name="fName" nillable="true" type="xsd:string"/>
@@ -14,8 +13,7 @@
       <xsd:element name="Date" nillable="true" type="xsd:date"/>
       <xsd:element name="DateTime" nillable="true" type="xsd:dateTime"/>
       <xsd:element name="Number" nillable="true" type="xsd:int"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="TextMulti"
-        nillable="true" type="xsd:string"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="TextMulti" nillable="true" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
-</xsd:schema>
+</xsd:schema><!--updated on 2018-06-29T14:00:22.609-->
