@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <group>
         <name>Process Model Creators</name>
         <securityMap>SECURITYMAP_TEAM</securityMap>
@@ -22,4 +21,4 @@
         <groups/>
     </admins>
     <ruleSet/>
-</groupHaul>
+</groupHaul><!--updated on 2018-06-29T14:54:14.082-->
