@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_sail_expression_test</name>
         <uuid>_a-0000d879-cf1c-8000-c717-010000010000_1516</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1554</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,19 +16,19 @@
         </visibility>
         <definition>= load(  
 	
-	local!documentDownloadLink_documentToSearchFor1: "large-image",  
+	local!documentDownloadLink_documentToSearchFor1: &quot;large-image&quot;,  
 	local!documentDownloadLink_label1: local!documentDownloadLink_documentToSearchFor1,
 
-	local!documentDownloadLink_documentToSearchFor2: "elefantastiff ",  
+	local!documentDownloadLink_documentToSearchFor2: &quot;elefantastiff &quot;,  
 	local!documentDownloadLink_label2: local!documentDownloadLink_documentToSearchFor2,
 
-	local!documentDownloadLink_documentToSearchFor3: "test1",  
+	local!documentDownloadLink_documentToSearchFor3: &quot;test1&quot;,  
 	local!documentDownloadLink_label3: local!documentDownloadLink_documentToSearchFor3,
 	
-	local!documentDownloadLink_documentToSearchFor4: "test2",  
+	local!documentDownloadLink_documentToSearchFor4: &quot;test2&quot;,  
 	local!documentDownloadLink_label4: local!documentDownloadLink_documentToSearchFor4,
 	
-	local!documentDownloadLink_documentToSearchFor5: "test3",  
+	local!documentDownloadLink_documentToSearchFor5: &quot;test3&quot;,  
 	local!documentDownloadLink_label5: local!documentDownloadLink_documentToSearchFor5,
 	
   
@@ -75,50 +76,50 @@
 			
 			
 		/*===== The Section Layout =====*/
-		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-		  label: "Dynamic Sail Component",
+		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+		  label: &quot;Dynamic Sail Component&quot;,
 		  columns: {
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
 			  contents: {						
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "DocumentDownloadLink Document 1",
-				  instructions: "Enter name of document, logic will return first document matching name",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;DocumentDownloadLink Document 1&quot;,
+				  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
 				  value: local!documentDownloadLink_documentToSearchFor1,
 				  saveInto: local!documentDownloadLink_documentToSearchFor1
 				),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "DocumentDownloadLink Document 2",
-				  instructions: "Enter name of document, logic will return first document matching name",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;DocumentDownloadLink Document 2&quot;,
+				  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
 				  value: local!documentDownloadLink_documentToSearchFor2,
 				  saveInto: local!documentDownloadLink_documentToSearchFor2
 				),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "DocumentDownloadLink Document 3",
-				  instructions: "Enter name of document, logic will return first document matching name",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;DocumentDownloadLink Document 3&quot;,
+				  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
 				  value: local!documentDownloadLink_documentToSearchFor3,
 				  saveInto: local!documentDownloadLink_documentToSearchFor3
 				),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "DocumentDownloadLink Document 4",
-				  instructions: "Enter name of document, logic will return first document matching name",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;DocumentDownloadLink Document 4&quot;,
+				  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
 				  value: local!documentDownloadLink_documentToSearchFor4,
 				  saveInto: local!documentDownloadLink_documentToSearchFor4
 				),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "DocumentDownloadLink Document 5",
-				  instructions: "Enter name of document, logic will return first document matching name",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;DocumentDownloadLink Document 5&quot;,
+				  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
@@ -132,17 +133,17 @@
 	
 			
 			/*===== THE DYNAMIC VARIABLE =====*/
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
 				contents: {
 				
 				
-				#"SYSTEM_SYSRULES_gridField"(				
-					label: "Grid Field Label", 
-					instructions: "Grid Field Instructions",
+				#&quot;SYSTEM_SYSRULES_gridField&quot;(				
+					label: &quot;Grid Field Label&quot;, 
+					instructions: &quot;Grid Field Instructions&quot;,
 					totalCount: 5,
-					columns: #"SYSTEM_SYSRULES_gridTextColumn"(
-					  label: "Grid Text Column Label",
-					  field:"title",
+					columns: #&quot;SYSTEM_SYSRULES_gridTextColumn&quot;(
+					  label: &quot;Grid Text Column Label&quot;,
+					  field:&quot;title&quot;,
 					  data: {
 					  
 					  local!documentDownloadLink_documentToSearchFor1,
@@ -153,7 +154,7 @@
 					  
 					  
 					  },
-					  alignment: "LEFT",
+					  alignment: &quot;LEFT&quot;,
 					  links: {
 					  
 					  local!documentDownloadLink1,
@@ -170,11 +171,11 @@
 				
 
 					
-					value: #"SYSTEM_SYSRULES_pagingInfo"(
+					value: #&quot;SYSTEM_SYSRULES_pagingInfo&quot;(
 						startIndex: 1,
 						batchSize: 5),
-						sort: #"SYSTEM_SYSRULES_sortInfo"(
-							field: "title",    
+						sort: #&quot;SYSTEM_SYSRULES_sortInfo&quot;(
+							field: &quot;title&quot;,    
 							ascending: true		
 						)
 					
@@ -221,4 +222,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-07-31T14:46:13.760-->
+</contentHaul>

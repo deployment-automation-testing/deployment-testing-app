@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>areUiEditables</name>
         <uuid>_a-0000d6f5-c20a-8000-bd70-010000010000_1375</uuid>
@@ -47,4 +48,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-07-31T14:46:13.654-->
+</contentHaul>
