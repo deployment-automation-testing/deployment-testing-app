@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>CompanyRecordType</name>
         <uuid>_a-0000d7c6-7676-8000-6fcc-010000010000_1309</uuid>
@@ -58,4 +59,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-08-01T10:32:55.676-->
+</contentHaul>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <community>
         <name>OneApp</name>
         <uuid>_a-0000d59d-8ffc-8000-41ed-010000010000_644</uuid>
-        <description/>
+        <description></description>
         <parentUuid>SYSTEM_COMMUNITY_ROOT</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -40,4 +41,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-08-01T10:32:55.784-->
+</contentHaul>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_component_not_selected</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1556</uuid>
@@ -13,18 +14,18 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-  label: "Sail Component selection",
+        <definition>#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+  label: &quot;Sail Component selection&quot;,
   columns: {
-    #"SYSTEM_SYSRULES_columnLayout"(
+    #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
       contents: {
-        #"SYSTEM_SYSRULES_textField"(
-          label: "",
-          instructions: "",
+        #&quot;SYSTEM_SYSRULES_textField&quot;(
+          label: &quot;&quot;,
+          instructions: &quot;&quot;,
           required: false,
           readOnly: true,
           disabled: false,
-          value: "Please select a Sail Component"
+          value: &quot;Please select a Sail Component&quot;
         )
       }
     )
@@ -61,4 +62,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-08-01T10:32:55.618-->
+</contentHaul>

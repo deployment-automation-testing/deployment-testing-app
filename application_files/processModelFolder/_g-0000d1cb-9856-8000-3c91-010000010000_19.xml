@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <processModelFolder>
         <name>OneApp</name>
         <uuid>_g-0000d1cb-9856-8000-3c91-010000010000_19</uuid>
@@ -32,4 +33,4 @@
             <groups/>
         </role>
     </roleMap>
-</processModelFolderHaul><!--updated on 2018-08-01T10:32:55.570-->
+</processModelFolderHaul>
