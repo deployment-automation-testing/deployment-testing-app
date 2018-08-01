@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_MultipleDropdownField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1575</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,72 +14,72 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!multipleDropDownField_label: &quot;label&quot;,
-  local!multipleDropDownField_instructions: &quot;instructions&quot;,
+  local!multipleDropDownField_label: "label",
+  local!multipleDropDownField_instructions: "instructions",
   local!multipleDropDownField_required: {2},
   local!multipleDropDownField_disabled: {2},
-  local!multipleDropDownField_choiceLabels: &quot;[Choice 1][Choice 2][Choice 3][Choice 4]&quot;,  
+  local!multipleDropDownField_choiceLabels: "[Choice 1][Choice 2][Choice 3][Choice 4]",  
   local!multipleDropDownField_value: {1},
   with(
-    #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-      label: &quot;Dynamic Sail Component&quot;,
+    #"SYSTEM_SYSRULES_sectionLayoutColumns"(
+      label: "Dynamic Sail Component",
       columns: {
-        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+        #"SYSTEM_SYSRULES_columnLayout"(
           contents: {
-            #&quot;SYSTEM_SYSRULES_textField&quot;(
-              label: &quot;Label&quot;,
-              instructions: &quot;Enter text for the dynamic Label value&quot;,
+            #"SYSTEM_SYSRULES_textField"(
+              label: "Label",
+              instructions: "Enter text for the dynamic Label value",
               required: false,
               readOnly: false,
               disabled: false,
               value: local!multipleDropDownField_label,
               saveInto: local!multipleDropDownField_label
             ),
-            #&quot;SYSTEM_SYSRULES_textField&quot;(
-              label: &quot;Instructions&quot;,
-              instructions: &quot;Enter text for the dynamic Instructions value&quot;,
+            #"SYSTEM_SYSRULES_textField"(
+              label: "Instructions",
+              instructions: "Enter text for the dynamic Instructions value",
               required: false,
               readOnly: false,
               disabled: false,
               value: local!multipleDropDownField_instructions,
               saveInto: local!multipleDropDownField_instructions
             ),
-            #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
-              label: &quot;Required&quot;,
-              instructions: &quot;Checked=true, Unchecked=false&quot;,
+            #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
+              label: "Required",
+              instructions: "Checked=true, Unchecked=false",
               required: false,
               disabled: false,
               choiceLabels: {
-                &quot;True&quot;,
-                &quot;False&quot;
+                "True",
+                "False"
               },
               value: local!multipleDropDownField_required,
               saveInto: local!multipleDropDownField_required
             ),
-            #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
-              label: &quot;Disabled&quot;,
-              instructions: &quot;Checked=true, Unchecked=false&quot;,
+            #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
+              label: "Disabled",
+              instructions: "Checked=true, Unchecked=false",
               required: false,
               disabled: false,
               choiceLabels: {
-                &quot;True&quot;,
-                &quot;False&quot;
+                "True",
+                "False"
               },
               value: local!multipleDropDownField_disabled,
               saveInto: local!multipleDropDownField_disabled
             ),
-            #&quot;SYSTEM_SYSRULES_textField&quot;(
-              label: &quot;Choice Labels&quot;,
-              instructions: &quot;Enter choices in boxes [], eg. [choice5][choice6][etc..]&quot;,
+            #"SYSTEM_SYSRULES_textField"(
+              label: "Choice Labels",
+              instructions: "Enter choices in boxes [], eg. [choice5][choice6][etc..]",
               required: false,
               readOnly: false,
               disabled: false,
               value: local!multipleDropDownField_choiceLabels,
               saveInto: local!multipleDropDownField_choiceLabels
             ),			
-            #&quot;SYSTEM_SYSRULES_textField&quot;(
-              label: &quot;Value&quot;,
-              instructions: &quot;Enter number of pre-selected choice for the dynamic Value value&quot;,
+            #"SYSTEM_SYSRULES_textField"(
+              label: "Value",
+              instructions: "Enter number of pre-selected choice for the dynamic Value value",
               required: false,
               readOnly: false,
               disabled: false,
@@ -89,22 +88,22 @@
             )
           }
         ),
-        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+        #"SYSTEM_SYSRULES_columnLayout"(
           contents: {
-            #&quot;SYSTEM_SYSRULES_multipleDropdownFieldByIndex&quot;(
+            #"SYSTEM_SYSRULES_multipleDropdownFieldByIndex"(
               label: local!multipleDropDownField_label,
               instructions: local!multipleDropDownField_instructions,
               required: if(
                 local!multipleDropDownField_required = 1,
-                &quot;true&quot;,
-                &quot;false&quot;
+                "true",
+                "false"
               ),
               disabled: if(
                 local!multipleDropDownField_disabled = 1,
-                &quot;true&quot;,
-                &quot;false&quot;
+                "true",
+                "false"
               ),
-              choiceLabels: extract(local!multipleDropDownField_choiceLabels,&quot;[&quot;,&quot;]&quot;),			  
+              choiceLabels: extract(local!multipleDropDownField_choiceLabels,"[","]"),			  
               value: local!multipleDropDownField_value,
               saveInto: local!multipleDropDownField_value
             )
@@ -145,4 +144,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-01T10:32:55.701-->

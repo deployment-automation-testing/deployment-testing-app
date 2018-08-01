@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <group>
         <name>Designers</name>
         <securityMap>SECURITYMAP_TEAM</securityMap>
@@ -49,4 +48,4 @@
             </conditions>
         </expressions>
     </ruleSet>
-</groupHaul>
+</groupHaul><!--updated on 2018-08-01T10:32:55.607-->

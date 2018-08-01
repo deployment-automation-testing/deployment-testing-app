@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <processModelFolder>
         <name>Dynamic Sail Components</name>
         <uuid>_g-0000d87d-aca6-8000-2679-010000010000_68</uuid>
-        <description></description>
+        <description/>
     </processModelFolder>
     <roleMap>
         <role name="ADMIN_OWNER">
@@ -33,4 +32,4 @@
             <groups/>
         </role>
     </roleMap>
-</processModelFolderHaul>
+</processModelFolderHaul><!--updated on 2018-08-01T10:32:55.832-->
