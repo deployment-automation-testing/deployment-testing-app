@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rulesFolder>
         <name>Internal System Rules</name>
         <uuid>SYSTEM_SYSRULES_FOLDER_INTERNAL</uuid>
@@ -41,4 +40,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-02T09:00:44.125-->

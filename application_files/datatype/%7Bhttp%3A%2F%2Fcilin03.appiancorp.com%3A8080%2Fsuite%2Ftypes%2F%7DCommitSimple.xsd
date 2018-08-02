@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema
-  targetNamespace="http://cilin03.appiancorp.com:8080/suite/types/"
-  xmlns:tns="http://cilin03.appiancorp.com:8080/suite/types/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://cilin03.appiancorp.com:8080/suite/types/" targetNamespace="http://cilin03.appiancorp.com:8080/suite/types/">
   <xsd:complexType name="CommitSimple">
     <xsd:sequence>
       <xsd:element name="id" type="xsd:int">
@@ -23,4 +21,4 @@
       <xsd:element name="version" nillable="true" type="xsd:int"/>
     </xsd:sequence>
   </xsd:complexType>
-</xsd:schema>
+</xsd:schema><!--updated on 2018-08-02T09:00:44.028-->

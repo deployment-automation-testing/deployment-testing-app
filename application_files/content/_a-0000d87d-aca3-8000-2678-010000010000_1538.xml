@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_sail_expressions_ui</name>
         <uuid>_a-0000d87d-aca3-8000-2678-010000010000_1538</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1554</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -20,35 +19,35 @@ load(
   local!sailComponentIndex: 1,
   with(
     local!sailComponentText: index(
-      #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1555&quot;,
+      #"_a-0000d84f-8704-8000-3c3b-010000010000_1555",
       local!sailComponentIndex,
-      &quot;&quot;
+      ""
     ),	
-    #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+    #"SYSTEM_SYSRULES_columnLayout"(
       contents: {
-        #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Sail Component selection&quot;,
+        #"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Sail Component selection",
           columns: {
-            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+            #"SYSTEM_SYSRULES_columnLayout"(
               contents: {
-                #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
-                  label: &quot;Sail Component&quot;,
-                  instructions: &quot;Select a sail component&quot;,
+                #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
+                  label: "Sail Component",
+                  instructions: "Select a sail component",
                   required: true,
                   disabled: false,
                   choiceLabels: {
-                    #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1555&quot;
+                    #"_a-0000d84f-8704-8000-3c3b-010000010000_1555"
                   },
-                  placeholderLabel: &quot;-select a sail component-&quot;,
+                  placeholderLabel: "-select a sail component-",
                   value: local!sailComponentIndex,
                   saveInto: local!sailComponentIndex
                 ),
-				#&quot;SYSTEM_SYSRULES_ButtonArrayLayout&quot;(
+				#"SYSTEM_SYSRULES_ButtonArrayLayout"(
 				  buttons: {
-					#&quot;SYSTEM_SYSRULES_ButtonWidgetSubmit&quot;(
-					  label: &quot;Submit&quot;,
-					  style: &quot;PRIMARY&quot;,
-					  confirmMessage: &quot;Submit?&quot;,
+					#"SYSTEM_SYSRULES_ButtonWidgetSubmit"(
+					  label: "Submit",
+					  style: "PRIMARY",
+					  confirmMessage: "Submit?",
 					  disabled: false,
 					  skipValidation: true,
 					  value: true,
@@ -61,132 +60,132 @@ load(
           }
         ),
 		if(
-		  local!sailComponentText = &quot;DateTimePickerField&quot;,
-		  #&quot;_a-0000d882-ffb1-8000-f9c7-010000010000_1489&quot;(),
+		  local!sailComponentText = "DateTimePickerField",
+		  #"_a-0000d882-ffb1-8000-f9c7-010000010000_1489"(),
 		if(
-		  local!sailComponentText = &quot;DocumentDownloadLink&quot;,
-		  #&quot;_a-0000d882-ffb1-8000-f9c7-010000010000_1875&quot;(),	
+		  local!sailComponentText = "DocumentDownloadLink",
+		  #"_a-0000d882-ffb1-8000-f9c7-010000010000_1875"(),	
 		if(
-		  local!sailComponentText = &quot;z-Testing Sandbox&quot;,
-		  #&quot;_a-0000d879-cf1c-8000-c717-010000010000_1516&quot;(),
+		  local!sailComponentText = "z-Testing Sandbox",
+		  #"_a-0000d879-cf1c-8000-c717-010000010000_1516"(),
 		if(
-		  local!sailComponentText = &quot;ImageGalleryField&quot;,
-		  #&quot;_a-0000d879-cf1c-8000-c717-010000010000_1499&quot;(),
+		  local!sailComponentText = "ImageGalleryField",
+		  #"_a-0000d879-cf1c-8000-c717-010000010000_1499"(),
 		if(
-		  local!sailComponentText = &quot;FileUploadField&quot;,
-		  #&quot;_a-0000d879-cf1c-8000-c717-010000010000_1495&quot;(),
+		  local!sailComponentText = "FileUploadField",
+		  #"_a-0000d879-cf1c-8000-c717-010000010000_1495"(),
 		if(
-		  local!sailComponentText = &quot;PickerField&quot;,
-		  #&quot;_a-0000d879-cf1c-8000-c717-010000010000_1505&quot;(),			
+		  local!sailComponentText = "PickerField",
+		  #"_a-0000d879-cf1c-8000-c717-010000010000_1505"(),			
 		if(
-		  local!sailComponentText = &quot;AnyLinkField&quot;,
-		  #&quot;_a-0000d879-cf1c-8000-c717-010000010000_1483&quot;(),
+		  local!sailComponentText = "AnyLinkField",
+		  #"_a-0000d879-cf1c-8000-c717-010000010000_1483"(),
 		if(
-          local!sailComponentText = &quot;BarChart&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1597&quot;(),
+          local!sailComponentText = "BarChart",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1597"(),
 		if(
-          local!sailComponentText = &quot;ButtonLayout&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1596&quot;(),
+          local!sailComponentText = "ButtonLayout",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1596"(),
         if(
-          local!sailComponentText = &quot;ButtonWidget&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1595&quot;(),
+          local!sailComponentText = "ButtonWidget",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1595"(),
 		if(
-          local!sailComponentText = &quot;CheckboxField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1688&quot;(),
+          local!sailComponentText = "CheckboxField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1688"(),
 		if(
-          local!sailComponentText = &quot;ColumnChart&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1593&quot;(),
+          local!sailComponentText = "ColumnChart",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1593"(),
 		if(
-          local!sailComponentText = &quot;ColumnLayout&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1592&quot;(),
+          local!sailComponentText = "ColumnLayout",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1592"(),
         if(
-          local!sailComponentText = &quot;DashboardLayout&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1591&quot;(),
+          local!sailComponentText = "DashboardLayout",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1591"(),
 		if(
-          local!sailComponentText = &quot;DateField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1590&quot;(),
+          local!sailComponentText = "DateField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1590"(),
 		if(
-          local!sailComponentText = &quot;DateTimeField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1589&quot;(),
+          local!sailComponentText = "DateTimeField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1589"(),
 		if(
-          local!sailComponentText = &quot;DropdownField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1588&quot;(),               
+          local!sailComponentText = "DropdownField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1588"(),               
 		if(
-          local!sailComponentText = &quot;DynamicLink&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1587&quot;(),
+          local!sailComponentText = "DynamicLink",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1587"(),
 		if(
-          local!sailComponentText = &quot;FloatingPointField (Decimal)&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1586&quot;(),
+          local!sailComponentText = "FloatingPointField (Decimal)",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1586"(),
 		if(
-          local!sailComponentText = &quot;FormLayout&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1585&quot;(),
+          local!sailComponentText = "FormLayout",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1585"(),
         if(
-          local!sailComponentText = &quot;GridField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1584&quot;(),
+          local!sailComponentText = "GridField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1584"(),
 		if(
-          local!sailComponentText = &quot;GridLinkColumn&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1583&quot;(),
+          local!sailComponentText = "GridLinkColumn",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1583"(),
 		if(
-          local!sailComponentText = &quot;GridTextColumn&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1582&quot;(),
+          local!sailComponentText = "GridTextColumn",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1582"(),
 		if(
-          local!sailComponentText = &quot;ImageField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1580&quot;(),
+          local!sailComponentText = "ImageField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1580"(),
         if(
-          local!sailComponentText = &quot;IntegerField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1579&quot;(),		  
+          local!sailComponentText = "IntegerField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1579"(),		  
 		if(
-          local!sailComponentText = &quot;LineChart&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1578&quot;(),
+          local!sailComponentText = "LineChart",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1578"(),
 		if(
-          local!sailComponentText = &quot;LinkField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1577&quot;(),
+          local!sailComponentText = "LinkField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1577"(),
 		if(
-          local!sailComponentText = &quot;MilestoneField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1576&quot;(),
+          local!sailComponentText = "MilestoneField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1576"(),
         if(
-          local!sailComponentText = &quot;MultipleDropdownField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1575&quot;(),
+          local!sailComponentText = "MultipleDropdownField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1575"(),
 		if(
-          local!sailComponentText = &quot;ParagraphField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1574&quot;(),
+          local!sailComponentText = "ParagraphField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1574"(),
 		if(
-          local!sailComponentText = &quot;PieChart&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1573&quot;(),
+          local!sailComponentText = "PieChart",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1573"(),
 		if(
-          local!sailComponentText = &quot;ProcessTaskLink&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1572&quot;(),
+          local!sailComponentText = "ProcessTaskLink",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1572"(),
         if(
-          local!sailComponentText = &quot;ProgressBarField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1571&quot;(),		  
+          local!sailComponentText = "ProgressBarField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1571"(),		  
 		if(
-          local!sailComponentText = &quot;RadioButtonField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1570&quot;(),
+          local!sailComponentText = "RadioButtonField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1570"(),
 		if(
-          local!sailComponentText = &quot;RecordLink&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1569&quot;(),
+          local!sailComponentText = "RecordLink",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1569"(),
 		if(
-          local!sailComponentText = &quot;SafeLink&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1568&quot;(),
+          local!sailComponentText = "SafeLink",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1568"(),
         if(
-          local!sailComponentText = &quot;SafeURI&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1567&quot;(),
+          local!sailComponentText = "SafeURI",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1567"(),
 		if(
-          local!sailComponentText = &quot;SectionLayout&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1566&quot;(),
+          local!sailComponentText = "SectionLayout",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1566"(),
 		if(
-          local!sailComponentText = &quot;Simple Grid&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1565&quot;(),		  
+          local!sailComponentText = "Simple Grid",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1565"(),		  
 		if(
-          local!sailComponentText = &quot;StackedBarChart&quot;,
+          local!sailComponentText = "StackedBarChart",
           rule!dynamic_StackedBarChart(),
 		if(
-          local!sailComponentText = &quot;TextField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1563&quot;(),		  
+          local!sailComponentText = "TextField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1563"(),		  
 		if(
-          local!sailComponentText = &quot;TimeField&quot;,
-          #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1562&quot;(),			
-		  #&quot;_a-0000d84f-8704-8000-3c3b-010000010000_1556&quot;()		  
+          local!sailComponentText = "TimeField",
+          #"_a-0000d84f-8704-8000-3c3b-010000010000_1562"(),			
+		  #"_a-0000d84f-8704-8000-3c3b-010000010000_1556"()		  
         ))))))))))))))))))))))))))))))))))))))))))
       }
     )
@@ -223,4 +222,4 @@ load(
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-02T09:00:44.156-->
