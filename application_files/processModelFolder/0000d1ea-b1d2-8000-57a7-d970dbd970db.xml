@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <processModelFolder>
         <name>Ocean</name>
         <uuid>0000d1ea-b1d2-8000-57a7-d970dbd970db</uuid>
-        <description></description>
+        <description/>
         <parentFolderUuid>_g-0000d193-f622-8000-2562-680000680000_21</parentFolderUuid>
     </processModelFolder>
     <roleMap>
@@ -34,4 +33,4 @@
             <groups/>
         </role>
     </roleMap>
-</processModelFolderHaul>
+</processModelFolderHaul><!--updated on 2018-08-21T15:21:31.894-->

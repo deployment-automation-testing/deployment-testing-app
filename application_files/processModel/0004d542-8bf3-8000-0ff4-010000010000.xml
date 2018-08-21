@@ -52,7 +52,10 @@
             </pair>
           </string-map>
         </desc>
+        <version><![CDATA[1.0]]></version>
         <versionStatus>2</versionStatus>
+        <latestVersion><![CDATA[1.0]]></latestVersion>
+        <state id="14"/>
         <process-name>
           <string-map>
             <pair>
@@ -956,4 +959,4 @@
     </pm>
   </process_model_port>
   <isPublished>true</isPublished>
-</processModelHaul><!--updated on 2018-08-21T14:43:24.685-->
+</processModelHaul><!--updated on 2018-08-21T15:21:31.966-->

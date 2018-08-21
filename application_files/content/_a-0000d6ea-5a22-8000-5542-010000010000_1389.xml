@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <communityKnowledgeCenter>
         <name>Records</name>
         <uuid>_a-0000d6ea-5a22-8000-5542-010000010000_1389</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d59d-8ffc-8000-41ed-010000010000_644</parentUuid>
         <visibility>
             <advertise>true</advertise>
@@ -42,4 +41,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-21T15:21:32.093-->

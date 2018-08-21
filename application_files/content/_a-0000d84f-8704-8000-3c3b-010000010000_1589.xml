@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DateTimeField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1589</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,37 +14,37 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!dateTimeDisplayField_label: &quot;label&quot;,
-  local!dateTimeDisplayField_instructions: &quot;instructions&quot;,  
-  local!dateTimeDisplayField_value: &quot;&quot;,
+  local!dateTimeDisplayField_label: "label",
+  local!dateTimeDisplayField_instructions: "instructions",  
+  local!dateTimeDisplayField_value: "",
   with(
 		
-		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Dynamic Sail Component&quot;,
+		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Dynamic Sail Component",
           columns: {
-            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+            #"SYSTEM_SYSRULES_columnLayout"(
               contents: {
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Label&quot;,
-                  instructions: &quot;Enter text for the dynamic Label value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Label",
+                  instructions: "Enter text for the dynamic Label value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!dateTimeDisplayField_label,
                   saveInto: local!dateTimeDisplayField_label
                 ),
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Instructions&quot;,
-                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Instructions",
+                  instructions: "Enter text for the dynamic Instructions value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!dateTimeDisplayField_instructions,
                   saveInto: local!dateTimeDisplayField_instructions
                 ),                
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Value&quot;,
-                  instructions: &quot;Enter text for the dynamic Value value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Value",
+                  instructions: "Enter text for the dynamic Value value",
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -55,10 +54,10 @@
 				 
               }
             ),
-			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+			#"SYSTEM_SYSRULES_columnLayout"(
               contents: {
 			  
-			  #&quot;SYSTEM_SYSRULES_dateTimeDisplayField&quot;(
+			  #"SYSTEM_SYSRULES_dateTimeDisplayField"(
 				label: local!dateTimeDisplayField_label,
 				instructions:local!dateTimeDisplayField_instructions,
 				value:local!dateTimeDisplayField_value 
@@ -104,4 +103,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-21T15:21:32.025-->

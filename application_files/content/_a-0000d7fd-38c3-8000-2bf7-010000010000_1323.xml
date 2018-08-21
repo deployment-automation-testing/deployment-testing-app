@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rulesFolder>
         <name>Query Records</name>
         <uuid>_a-0000d7fd-38c3-8000-2bf7-010000010000_1323</uuid>
@@ -41,4 +40,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-08-21T15:21:31.971-->
