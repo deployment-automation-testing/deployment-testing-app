@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rule>
-        <name>dynamic_GridLinkColumn</name>
-        <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1583</uuid>
-        <description></description>
-        <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
+    <constant>
+        <name>areUiEditablesNew</name>
+        <uuid>_a-0000dd72-bdc5-8000-aae2-01ef9001ef90_13685</uuid>
+        <description>Change the value of this constant if you want the record details view to be editable</description>
+        <parentUuid>_a-0001d554-e2d4-8000-e2d4-360000360000_75</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -14,26 +14,14 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>= #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-  label: &quot;Component not yet implemented&quot;,
-  columns: {
-    #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
-      contents: {
-        #&quot;SYSTEM_SYSRULES_textField&quot;(
-          label: &quot;&quot;,
-          instructions: &quot;&quot;,
-          required: false,
-          readOnly: true,
-          disabled: false,
-          value: &quot;Component not yet implemented&quot;
-        )
-      }
-    )
-  }
-)</definition>
-        <preferredEditor>legacy</preferredEditor>
-        <offlineEnabled>false</offlineEnabled>
-    </rule>
+        <typedValue>
+            <type>
+                <name>boolean</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+            <value>false</value>
+        </typedValue>
+    </constant>
     <roleMap public="true">
         <role allowForAll="false" inherit="true" name="readers">
             <users/>
@@ -45,7 +33,7 @@
         </role>
         <role allowForAll="false" inherit="true" name="administrators">
             <users>
-                <userUuid>Administrator</userUuid>
+                <userUuid>djemec</userUuid>
             </users>
             <groups/>
         </role>

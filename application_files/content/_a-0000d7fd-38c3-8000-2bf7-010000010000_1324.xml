@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>CommitsRecordType</name>
         <uuid>_a-0000d7fd-38c3-8000-2bf7-010000010000_1324</uuid>
@@ -19,16 +20,8 @@
                 <namespace>http://www.appian.com/ae/types/2009</namespace>
             </type>
             <value a:id="-1" a:uuid="74fda519-09b6-4192-bafd-3e4bd90a42ee" name="">
-                <a:pluralName/>
-                <a:description/>
-                <a:urlStub/>
-                <a:listViewTemplateExpr/>
                 <a:isSystem>false</a:isSystem>
-                <a:dataSrcExpr/>
-                <a:facetsListExpr/>
-                <a:defaultFiltersExpr/>
                 <a:security>16383</a:security>
-                <a:opaqueId/>
             </value>
         </typedValue>
     </constant>
@@ -58,4 +51,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-08-02T13:28:37.668-->
+</contentHaul>

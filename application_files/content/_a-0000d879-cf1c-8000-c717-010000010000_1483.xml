@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_AnyLinkField</name>
         <uuid>_a-0000d879-cf1c-8000-c717-010000010000_1483</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,58 +16,58 @@
         </visibility>
         <definition>= load(
   /*====== AnyLink Variables ======*/
-  local!anyLinkField_label: "label",
-  local!anyLinkField_instructions: "instructions",
+  local!anyLinkField_label: &quot;label&quot;,
+  local!anyLinkField_instructions: &quot;instructions&quot;,
   local!anyLinkField_checkedLinks: {1,2,3,4,5},
   local!anyLinkField_numberOfLinks: 5,
   local!anyLinkField_labelPosition: {3},
   
   /*====== SafeLink Variables ======*/
-  local!anyLinkField_SafeLink_uri: "http://www.appian.com",
-  local!anyLinkField_SafeLink_label: "SafeLink",
+  local!anyLinkField_SafeLink_uri: &quot;http://www.appian.com&quot;,
+  local!anyLinkField_SafeLink_label: &quot;SafeLink&quot;,
   
   /*====== ProcessTaskLink Variables ======*/
   local!anyLinkField_ProcessTaskLink_task: 1,
-  local!anyLinkField_ProcessTaskLink_label: "ProcessTaskLink",
+  local!anyLinkField_ProcessTaskLink_label: &quot;ProcessTaskLink&quot;,
   
   /*====== DynamicLink Variables ======*/
   local!anyLinkField_DynamicLink_value: true,
-  local!anyLinkField_DynamicLink_label: "DynamicLink", 
+  local!anyLinkField_DynamicLink_label: &quot;DynamicLink&quot;, 
   
   /*====== RecordLink Variables ======*/
-  local!anyLinkField_RecordLink_recordType: #"_a-0000d7c6-7676-8000-6fcc-010000010000_1309",
+  local!anyLinkField_RecordLink_recordType: #&quot;_a-0000d7c6-7676-8000-6fcc-010000010000_1309&quot;,
   local!anyLinkField_RecordLink_identifier: 1,
-  local!anyLinkField_RecordLink_dashboard: "summary",
-  local!anyLinkField_RecordLink_label: "RecordLink",
+  local!anyLinkField_RecordLink_dashboard: &quot;summary&quot;,
+  local!anyLinkField_RecordLink_label: &quot;RecordLink&quot;,
   
   /*====== DocumentLink Variables ======*/
-  local!anyLinkField_DocumentDownloadLink_documentToSearchFor: "mp3File",  
-  local!anyLinkField_DocumentDownloadLink_label: "DocumentDownLoadLink",  
+  local!anyLinkField_DocumentDownloadLink_documentToSearchFor: &quot;mp3File&quot;,  
+  local!anyLinkField_DocumentDownloadLink_label: &quot;DocumentDownLoadLink&quot;,  
   
   with(   
     local!anyLinkField_DocumentDownloadLink_document: finddocumentsbyname(true, local!anyLinkField_DocumentDownloadLink_documentToSearchFor),
 	/*====== Links Type ======*/
 	local!anyLinkField_SafeLink: {
-		#"SYSTEM_SYSRULES_safeLink"(
-			uri: if(local!anyLinkField_SafeLink_uri="null",null(),local!anyLinkField_SafeLink_uri),
-			label: if(local!anyLinkField_SafeLink_label="null",null(),local!anyLinkField_SafeLink_label)
+		#&quot;SYSTEM_SYSRULES_safeLink&quot;(
+			uri: if(local!anyLinkField_SafeLink_uri=&quot;null&quot;,null(),local!anyLinkField_SafeLink_uri),
+			label: if(local!anyLinkField_SafeLink_label=&quot;null&quot;,null(),local!anyLinkField_SafeLink_label)
 		  )  
 	}, 
 	local!anyLinkField_ProcessTaskLink: {
-		#"SYSTEM_SYSRULES_processTaskLink"(
-			task: if(local!anyLinkField_ProcessTaskLink_task="null",null(),toInteger(local!anyLinkField_ProcessTaskLink_task)),
-			label: if(local!anyLinkField_ProcessTaskLink_label="null",null(),local!anyLinkField_ProcessTaskLink_label)
+		#&quot;SYSTEM_SYSRULES_processTaskLink&quot;(
+			task: if(local!anyLinkField_ProcessTaskLink_task=&quot;null&quot;,null(),toInteger(local!anyLinkField_ProcessTaskLink_task)),
+			label: if(local!anyLinkField_ProcessTaskLink_label=&quot;null&quot;,null(),local!anyLinkField_ProcessTaskLink_label)
 		)  
 	},
 	local!anyLinkField_DynamicLink: {  
-		#"SYSTEM_SYSRULES_dynamicLink"(
-			value: if(local!anyLinkField_DynamicLink_value="null",null(),not(local!anyLinkField_DynamicLink_value)),
-			label: if(local!anyLinkField_DynamicLink_label="null",null(),local!anyLinkField_DynamicLink_label &amp; " [Value = " &amp;local!anyLinkField_DynamicLink_value&amp;"]"),
+		#&quot;SYSTEM_SYSRULES_dynamicLink&quot;(
+			value: if(local!anyLinkField_DynamicLink_value=&quot;null&quot;,null(),not(local!anyLinkField_DynamicLink_value)),
+			label: if(local!anyLinkField_DynamicLink_label=&quot;null&quot;,null(),local!anyLinkField_DynamicLink_label &amp; &quot; [Value = &quot; &amp;local!anyLinkField_DynamicLink_value&amp;&quot;]&quot;),
 			saveInto: local!anyLinkField_DynamicLink_value
 		)  
 	},
 	local!anyLinkField_RecordLink: {  
-		#"SYSTEM_SYSRULES_recordLink"(
+		#&quot;SYSTEM_SYSRULES_recordLink&quot;(
 			recordType: local!anyLinkField_RecordLink_recordType,
 			identifier: local!anyLinkField_RecordLink_identifier,
 			dashboard: local!anyLinkField_RecordLink_dashboard,
@@ -92,18 +93,18 @@
 	
 	/*------ SafeLink ------*/	
 	local!anyLinkField_SafeLink_dynamic_properties:{			
-			#"SYSTEM_SYSRULES_textField"(
-              label: "SafeLink URI",
-              instructions: "Enter text for the dynamic SafeLink URI value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;SafeLink URI&quot;,
+              instructions: &quot;Enter text for the dynamic SafeLink URI value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_SafeLink_uri,
               saveInto: local!anyLinkField_SafeLink_uri
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "SafeLink Label",
-              instructions: "Enter text for the dynamic SafeLink Label value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;SafeLink Label&quot;,
+              instructions: &quot;Enter text for the dynamic SafeLink Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -113,18 +114,18 @@
 	},
 	/*------ ProcessTaskLink ------*/	
 	local!anyLinkField_ProcessTaskLink_dynamic_properties:{			
-			#"SYSTEM_SYSRULES_textField"(
-              label: "ProcessTaskLink Task id",
-              instructions: "Enter text for the dynamic ProcessTaskLink Task id value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;ProcessTaskLink Task id&quot;,
+              instructions: &quot;Enter text for the dynamic ProcessTaskLink Task id value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_ProcessTaskLink_task,
               saveInto: local!anyLinkField_ProcessTaskLink_task
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "ProcessTaskLink Label",
-              instructions: "Enter text for the dynamic ProcessTaskLink Label value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;ProcessTaskLink Label&quot;,
+              instructions: &quot;Enter text for the dynamic ProcessTaskLink Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -134,18 +135,18 @@
 	},
 	/*------ DynamicLink ------*/	
 	local!anyLinkField_DynamicLink_dynamic_properties:{			
-			#"SYSTEM_SYSRULES_textField"(
-              label: "DynamicLink Value",
-              instructions: "Enter text for the dynamic DynamicLink Value value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;DynamicLink Value&quot;,
+              instructions: &quot;Enter text for the dynamic DynamicLink Value value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_DynamicLink_value,
               saveInto: local!anyLinkField_DynamicLink_value
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "DynamicLink Label",
-              instructions: "Enter text for the dynamic DynamicLink Label value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;DynamicLink Label&quot;,
+              instructions: &quot;Enter text for the dynamic DynamicLink Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -155,35 +156,35 @@
 	},
 	/*------ RecordLink ------*/
 	local!anyLinkField_RecordLink_dynamic_properties:{
-			#"SYSTEM_SYSRULES_textField"(
-              label: "RecordLink RecordType",
-              instructions: "Dynamic field TBD",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;RecordLink RecordType&quot;,
+              instructions: &quot;Dynamic field TBD&quot;,
               required: false,
               readOnly: true,
               disabled: false,
-              value: "cons!CompanyRecordType"              
+              value: &quot;cons!CompanyRecordType&quot;              
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "RecordLink Identifier",
-              instructions: "Enter text for the dynamic RecordLink Identifier value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;RecordLink Identifier&quot;,
+              instructions: &quot;Enter text for the dynamic RecordLink Identifier value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_RecordLink_identifier,
               saveInto: local!anyLinkField_RecordLink_identifier
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "RecordLink Dashboard",
-              instructions: "Enter text for the dynamic RecordLink Dashboard value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;RecordLink Dashboard&quot;,
+              instructions: &quot;Enter text for the dynamic RecordLink Dashboard value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_RecordLink_dashboard,
               saveInto: local!anyLinkField_RecordLink_dashboard
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "RecordLink Label",
-              instructions: "Enter text for the dynamic RecordLink Label value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;RecordLink Label&quot;,
+              instructions: &quot;Enter text for the dynamic RecordLink Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -193,18 +194,18 @@
 	},
 	/*------ DocumentDownloadLink ------*/	
 	local!anyLinkField_DocumentDownloadLink_dynamic_properties:{			
-			#"SYSTEM_SYSRULES_textField"(
-              label: "DocumentDownloadLink Document",
-              instructions: "Enter name of document, logic will return first document matching name",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;DocumentDownloadLink Document&quot;,
+              instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_DocumentDownloadLink_documentToSearchFor,
               saveInto: local!anyLinkField_DocumentDownloadLink_documentToSearchFor
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "DocumentDownloadLink Label",
-              instructions: "Enter text for the dynamic DocumentDownloadLink Label value",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;DocumentDownloadLink Label&quot;,
+              instructions: &quot;Enter text for the dynamic DocumentDownloadLink Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -231,55 +232,55 @@
 
 	
 	/*===== The Section Layout =====*/
-	#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-      label: "Dynamic Sail Component",
+	#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+      label: &quot;Dynamic Sail Component&quot;,
       columns: {
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {			
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Label",
-              instructions: "Enter text for the dynamic Label value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Label&quot;,
+              instructions: &quot;Enter text for the dynamic Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_label,
               saveInto: local!anyLinkField_label
             ),
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Instructions",
-              instructions: "Enter text for the dynamic Instructions value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Instructions&quot;,
+              instructions: &quot;Enter text for the dynamic Instructions value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!anyLinkField_instructions,
               saveInto: local!anyLinkField_instructions
             ),
-            #"SYSTEM_SYSRULES_checkboxFieldByIndex"(
-              label: "Links",
-              instructions: "Check a Link type to add it to the dynamic Links value",
+            #&quot;SYSTEM_SYSRULES_checkboxFieldByIndex&quot;(
+              label: &quot;Links&quot;,
+              instructions: &quot;Check a Link type to add it to the dynamic Links value&quot;,
               required: false,
               disabled: false,
               choiceLabels: {
-                "SafeLink",
-				"ProcessTaskLink",
-				"DynamicLink",
-				"RecordLink",
-				"DocumentDownloadLink"   
+                &quot;SafeLink&quot;,
+				&quot;ProcessTaskLink&quot;,
+				&quot;DynamicLink&quot;,
+				&quot;RecordLink&quot;,
+				&quot;DocumentDownloadLink&quot;   
               },
               value: local!anyLinkField_checkedLinks,
 			  saveInto: local!anyLinkField_checkedLinks
               
             ),
-            #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-              label: "Label Position",
-              instructions: "Checked=true, Unchecked=false",
+            #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+              label: &quot;Label Position&quot;,
+              instructions: &quot;Checked=true, Unchecked=false&quot;,
               required: false,
               disabled: false,
               choiceLabels: {
-                "COLLAPSED",
-                "ABOVE",
-                "ADJACENT",
-                "null()"
+                &quot;COLLAPSED&quot;,
+                &quot;ABOVE&quot;,
+                &quot;ADJACENT&quot;,
+                &quot;null()&quot;
               },
               value: local!anyLinkField_labelPosition,
               saveInto: local!anyLinkField_labelPosition
@@ -289,16 +290,16 @@
         ),
 		
 		/*===== THE DYNAMIC VARIABLE =====*/
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {
             'type!{http://www.appian.com/ae/types/2009}AnyLinkField'(
               label: local!anyLinkField_label,
               instructions: local!anyLinkField_instructions,
               links: local!anyLinkField_shown_links,
-              labelPosition: 	if(local!anyLinkField_labelPosition=1,"COLLAPSED",
-								if(local!anyLinkField_labelPosition=2,"ABOVE",
-								if(local!anyLinkField_labelPosition=3,"ADJACENT",
-								if(local!anyLinkField_labelPosition=4, null(), "ADJACENT"
+              labelPosition: 	if(local!anyLinkField_labelPosition=1,&quot;COLLAPSED&quot;,
+								if(local!anyLinkField_labelPosition=2,&quot;ABOVE&quot;,
+								if(local!anyLinkField_labelPosition=3,&quot;ADJACENT&quot;,
+								if(local!anyLinkField_labelPosition=4, null(), &quot;ADJACENT&quot;
 								))))
 							
             )
@@ -339,4 +340,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-08-02T13:28:37.638-->
+</contentHaul>

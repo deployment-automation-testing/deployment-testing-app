@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <application>
         <name>Dynamic Sail Components</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1716</uuid>
@@ -124,6 +125,7 @@
                         <uuid>_a-0000d87d-aca3-8000-2678-010000010000_1617</uuid>
                         <uuid>_a-0000d882-ffb1-8000-f9c7-010000010000_1489</uuid>
                         <uuid>_a-0000d882-ffb1-8000-f9c7-010000010000_1875</uuid>
+                        <uuid>_a-0000dd72-bdc5-8000-aae2-01ef9001ef90_13685</uuid>
                     </uuids>
                 </item>
                 <item>
@@ -191,6 +193,18 @@
                 </item>
                 <item>
                     <type>site</type>
+                    <uuids/>
+                </item>
+                <item>
+                    <type>adminSetting</type>
+                    <uuids/>
+                </item>
+                <item>
+                    <type>thirdPartyCredentials</type>
+                    <uuids/>
+                </item>
+                <item>
+                    <type>dataSource</type>
                     <uuids/>
                 </item>
             </globalIdMap>
@@ -278,6 +292,18 @@
                     <type>site</type>
                     <uuids/>
                 </item>
+                <item>
+                    <type>adminSetting</type>
+                    <uuids/>
+                </item>
+                <item>
+                    <type>thirdPartyCredentials</type>
+                    <uuids/>
+                </item>
+                <item>
+                    <type>dataSource</type>
+                    <uuids/>
+                </item>
             </globalIdMap>
         </associatedApplications>
     </application>
@@ -311,4 +337,4 @@
             </role>
         </contentRoleMap>
     </roleMap>
-</applicationHaul><!--updated on 2018-08-02T13:28:37.699-->
+</applicationHaul><!--updated on 2018-08-21T14:40:59.947-->
