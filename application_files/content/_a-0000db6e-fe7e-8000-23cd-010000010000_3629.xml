@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>MY_NO_DDL_INCLUDE_PATCH</name>
         <uuid>_a-0000db6e-fe7e-8000-23cd-010000010000_3629</uuid>
@@ -50,4 +49,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-09-27T15:07:44.029-->

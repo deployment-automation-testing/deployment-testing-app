@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>patchInterface</name>
         <uuid>a6652c00-3a92-4346-ad10-de3e8db22cad</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000db6d-fe6f-8000-fb7f-010000010000_1609</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,33 +13,33 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>=#&quot;SYSTEM_SYSRULES_formLayout&quot;(
-  label: &quot;Lorem Ipsum&quot;,
-  instructions: &quot;Lorem Ipsum&quot;,
+        <definition>=#"SYSTEM_SYSRULES_formLayout"(
+  label: "Lorem Ipsum",
+  instructions: "Lorem Ipsum",
   firstColumnContents: {
-    #&quot;SYSTEM_SYSRULES_textField&quot;(
-      label: &quot;Lorem Ipsum&quot;,
-      labelPosition: &quot;ABOVE&quot;,
+    #"SYSTEM_SYSRULES_textField"(
+      label: "Lorem Ipsum",
+      labelPosition: "ABOVE",
       saveInto: {},
-      refreshAfter: &quot;UNFOCUS&quot;,
+      refreshAfter: "UNFOCUS",
       validations: {}
     )
   },
   secondColumnContents: {
     /* Add components here for a two-column form */
   },
-  buttons: #&quot;SYSTEM_SYSRULES_ButtonLayout&quot;(
+  buttons: #"SYSTEM_SYSRULES_ButtonLayout"(
     primaryButtons: {
-      #&quot;SYSTEM_SYSRULES_ButtonWidgetSubmit&quot;(
-        label: &quot;Submit&quot;,
-        style: &quot;PRIMARY&quot;,
+      #"SYSTEM_SYSRULES_ButtonWidgetSubmit"(
+        label: "Submit",
+        style: "PRIMARY",
         saveInto: {}
       )
     },
     secondaryButtons: {
-      #&quot;SYSTEM_SYSRULES_ButtonWidgetSubmit&quot;(
-        label: &quot;Cancel&quot;,
-        style: &quot;NORMAL&quot;,
+      #"SYSTEM_SYSRULES_ButtonWidgetSubmit"(
+        label: "Cancel",
+        style: "NORMAL",
         value: true,
         saveInto: ri!cancel,
         skipValidation: true
@@ -87,4 +86,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2018-09-27T15:07:44.033-->
