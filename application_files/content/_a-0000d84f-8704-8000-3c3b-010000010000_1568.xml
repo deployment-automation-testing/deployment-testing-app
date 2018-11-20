@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_SafeLink</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1568</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,26 +15,26 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(    
-  local!safeLink_uri: "http://www.appian.com",
-  local!safeLink_label: "label",
+  local!safeLink_uri: &quot;http://www.appian.com&quot;,
+  local!safeLink_label: &quot;label&quot;,
   with(		
-		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-          label: "Dynamic Sail Component",
+		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+          label: &quot;Dynamic Sail Component&quot;,
           columns: {
-            #"SYSTEM_SYSRULES_columnLayout"(
+            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {                
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Label",
-                  instructions: "Enter text for the dynamic Label value",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Label&quot;,
+                  instructions: &quot;Enter text for the dynamic Label value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!safeLink_label,
                   saveInto: local!safeLink_label
                 ),
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Uri",
-                  instructions: "Enter text for the dynamic Uri value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Uri&quot;,
+                  instructions: &quot;Enter text for the dynamic Uri value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -42,20 +43,20 @@
                 )
 			  }
             ),
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
 
 
 				'type!{http://www.appian.com/ae/types/2009}AnyLinkField'(
-					label: "",
-					instructions: "",
+					label: &quot;&quot;,
+					instructions: &quot;&quot;,
 					links: {					
-						#"SYSTEM_SYSRULES_safeLink"(							
+						#&quot;SYSTEM_SYSRULES_safeLink&quot;(							
 							label: local!safeLink_label,
 							uri: local!safeLink_uri
 						)	 				
 					},
-					labelPosition: "ADJACENT"							
+					labelPosition: &quot;ADJACENT&quot;							
 					)				
 				}
 			)
@@ -96,4 +97,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-11-09T13:08:08.827-->
+</contentHaul>

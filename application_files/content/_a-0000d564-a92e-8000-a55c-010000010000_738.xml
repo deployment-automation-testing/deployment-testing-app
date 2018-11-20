@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>company_names_baseball</name>
         <uuid>_a-0000d564-a92e-8000-a55c-010000010000_738</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d552-52d7-8000-4b9d-010000010000_614</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -78,4 +79,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-11-09T13:08:08.861-->
+</contentHaul>

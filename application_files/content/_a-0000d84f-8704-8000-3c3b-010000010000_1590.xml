@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DateField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1590</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,9 +15,9 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!dateDisplayField_label: "label",
-  local!dateDisplayField_instructions: "instructions",  
-  local!dateDisplayField_valueText: "",
+  local!dateDisplayField_label: &quot;label&quot;,
+  local!dateDisplayField_instructions: &quot;instructions&quot;,  
+  local!dateDisplayField_valueText: &quot;&quot;,
   local!dateDisplayField_month: 9,
   local!dateDisplayField_day: 5,
   local!dateDisplayField_year: 1986,
@@ -28,71 +29,71 @@
 										localdateDisplayField_date,
 										local!dateDisplayField_valueText
 		),		
-		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-          label: "Dynamic Sail Component",
+		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+          label: &quot;Dynamic Sail Component&quot;,
           columns: {
-            #"SYSTEM_SYSRULES_columnLayout"(
+            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Label",
-                  instructions: "Enter text for the dynamic Label value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Label&quot;,
+                  instructions: &quot;Enter text for the dynamic Label value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!dateDisplayField_label,
                   saveInto: local!dateDisplayField_label
                 ),
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Instructions",
-                  instructions: "Enter text for the dynamic Instructions value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Instructions&quot;,
+                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!dateDisplayField_instructions,
                   saveInto: local!dateDisplayField_instructions
                 ),
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Dynamic Value Type",
-                  instructions: "Use Month/Day/Year values or Value(Text) to populate dynamic value",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Dynamic Value Type&quot;,
+                  instructions: &quot;Use Month/Day/Year values or Value(Text) to populate dynamic value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "Value (TextField)",
-                    "Month/Day/Year (date(integer,integer,integer))"
+                    &quot;Value (TextField)&quot;,
+                    &quot;Month/Day/Year (date(integer,integer,integer))&quot;
                   },
                   value: local!dateDisplayField_valueType,
                   saveInto: local!dateDisplayField_valueType
                 ),                
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Value",
-                  instructions: "Enter text for the dynamic Value value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Value&quot;,
+                  instructions: &quot;Enter text for the dynamic Value value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: if(dateDisplayField_valueType=1,false,true),
                   value: if(dateDisplayField_valueType=1,local!dateDisplayField_valueText,localdateDisplayField_date),
                   saveInto: local!dateDisplayField_valueText
                 ),				
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Month",
-                  instructions: "Enter integer for Month",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Month&quot;,
+                  instructions: &quot;Enter integer for Month&quot;,
                   required: false,
                   readOnly: false,
                   disabled: if(dateDisplayField_valueType=2,false,true),
                   value: local!dateDisplayField_month,
                   saveInto: local!dateDisplayField_month
 				),
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Day",
-                  instructions: "Enter integer for Day",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Day&quot;,
+                  instructions: &quot;Enter integer for Day&quot;,
                   required: false,
                   readOnly: false,
                   disabled: if(dateDisplayField_valueType=2,false,true),
                   value: local!dateDisplayField_day,
                   saveInto: local!dateDisplayField_day
 				),
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Year",
-                  instructions: "Enter integer for Year",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Year&quot;,
+                  instructions: &quot;Enter integer for Year&quot;,
                   required: false,
                   readOnly: false,
                   disabled: if(dateDisplayField_valueType=2,false,true),
@@ -102,10 +103,10 @@
 				 
               }
             ),
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
 			  
-			  #"SYSTEM_SYSRULES_dateDisplayField"(
+			  #&quot;SYSTEM_SYSRULES_dateDisplayField&quot;(
 				label: local!dateDisplayField_label,
 				instructions:local!dateDisplayField_instructions,
 				value:local!dateDisplayField_value 
@@ -151,4 +152,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-11-09T13:08:09.002-->
+</contentHaul>

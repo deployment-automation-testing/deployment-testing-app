@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>sailComponentsList</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1555</uuid>
@@ -92,4 +93,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2018-11-09T13:08:08.793-->
+</contentHaul>
