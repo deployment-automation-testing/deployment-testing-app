@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_TimeField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1562</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -15,37 +14,37 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!TimeField_label: &quot;label&quot;,
-  local!TimeField_instructions: &quot;instructions&quot;,  
-  local!TimeField_value: &quot;value&quot;,
+  local!TimeField_label: "label",
+  local!TimeField_instructions: "instructions",  
+  local!TimeField_value: "value",
   with(
 		
-		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Dynamic Sail Component&quot;,
+		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Dynamic Sail Component",
           columns: {
-            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+            #"SYSTEM_SYSRULES_columnLayout"(
               contents: {
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Label&quot;,
-                  instructions: &quot;Enter text for the dynamic Label value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Label",
+                  instructions: "Enter text for the dynamic Label value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!TimeField_label,
                   saveInto: local!TimeField_label
                 ),
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Instructions&quot;,
-                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Instructions",
+                  instructions: "Enter text for the dynamic Instructions value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!TimeField_instructions,
                   saveInto: local!TimeField_instructions
                 ),                
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Value&quot;,
-                  instructions: &quot;Enter text for the dynamic Value value&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Value",
+                  instructions: "Enter text for the dynamic Value value",
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -55,10 +54,10 @@
 				 
               }
             ),
-			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+			#"SYSTEM_SYSRULES_columnLayout"(
               contents: {
 			  
-			  #&quot;SYSTEM_SYSRULES_timeDisplayField&quot;(
+			  #"SYSTEM_SYSRULES_timeDisplayField"(
                   label: local!TimeField_label,
                   instructions: local!TimeField_instructions,                  
                   value: local!TimeField_value,
@@ -105,4 +104,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-01-03T13:40:51.435-->

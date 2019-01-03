@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rulesFolder>
         <name>DynamicSailExpressions</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1554</uuid>
@@ -45,4 +44,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-01-03T13:40:51.405-->
