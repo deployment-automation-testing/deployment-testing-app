@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>decrementToNull</name>
         <uuid>SYSTEM_SYSRULES_decrementToNull</uuid>
-        <description/>
+        <description></description>
         <parentUuid>SYSTEM_SYSRULES_FOLDER_a-0001d5f7-5ffc-8000-5ffc-0f00000f0000_103</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -52,4 +53,4 @@ if(ri!value = 1, null, ri!value - 1)
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-03-04T11:00:47.179-->
+</contentHaul>

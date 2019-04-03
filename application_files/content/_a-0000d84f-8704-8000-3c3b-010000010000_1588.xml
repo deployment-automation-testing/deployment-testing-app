@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DropdownField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1588</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,82 +15,82 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!dropDownField_label: "label",
-  local!dropDownField_instructions: "instructions",
+  local!dropDownField_label: &quot;label&quot;,
+  local!dropDownField_instructions: &quot;instructions&quot;,
   local!dropDownField_required: {2},
   local!dropDownField_disabled: {2},
-  local!dropDownField_choiceLabels: "[Choice 1][Choice 2][Choice 3][Choice 4]",
-  local!dropDownField_placeHolderLabel: "place holder text",
+  local!dropDownField_choiceLabels: &quot;[Choice 1][Choice 2][Choice 3][Choice 4]&quot;,
+  local!dropDownField_placeHolderLabel: &quot;place holder text&quot;,
   local!dropDownField_value: {1},
   with(
-    #"SYSTEM_SYSRULES_sectionLayoutColumns"(
-      label: "Dynamic Sail Component",
+    #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+      label: &quot;Dynamic Sail Component&quot;,
       columns: {
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Label",
-              instructions: "Enter text for the dynamic Label value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Label&quot;,
+              instructions: &quot;Enter text for the dynamic Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!dropDownField_label,
               saveInto: local!dropDownField_label
             ),
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Instructions",
-              instructions: "Enter text for the dynamic Instructions value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Instructions&quot;,
+              instructions: &quot;Enter text for the dynamic Instructions value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!dropDownField_instructions,
               saveInto: local!dropDownField_instructions
             ),
-            #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-              label: "Required",
-              instructions: "Checked=true, Unchecked=false",
+            #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+              label: &quot;Required&quot;,
+              instructions: &quot;Checked=true, Unchecked=false&quot;,
               required: false,
               disabled: false,
               choiceLabels: {
-                "True",
-                "False"
+                &quot;True&quot;,
+                &quot;False&quot;
               },
               value: local!dropDownField_required,
               saveInto: local!dropDownField_required
             ),
-            #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-              label: "Disabled",
-              instructions: "Checked=true, Unchecked=false",
+            #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+              label: &quot;Disabled&quot;,
+              instructions: &quot;Checked=true, Unchecked=false&quot;,
               required: false,
               disabled: false,
               choiceLabels: {
-                "True",
-                "False"
+                &quot;True&quot;,
+                &quot;False&quot;
               },
               value: local!dropDownField_disabled,
               saveInto: local!dropDownField_disabled
             ),
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Choice Labels",
-              instructions: "Enter choices in boxes [], eg. [choice5][choice6][etc..]",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Choice Labels&quot;,
+              instructions: &quot;Enter choices in boxes [], eg. [choice5][choice6][etc..]&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!dropDownField_choiceLabels,
               saveInto: local!dropDownField_choiceLabels
             ),
-			#"SYSTEM_SYSRULES_textField"(
-              label: "Place Holder Label",
-              instructions: "Enter the text for the place holder label",
+			#&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Place Holder Label&quot;,
+              instructions: &quot;Enter the text for the place holder label&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!dropDownField_placeHolderLabel,
               saveInto: local!dropDownField_placeHolderLabel
             ),
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Value",
-              instructions: "Enter number of pre-selected choice for the dynamic Value value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Value&quot;,
+              instructions: &quot;Enter number of pre-selected choice for the dynamic Value value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -98,22 +99,22 @@
             )
           }
         ),
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {
-            #"SYSTEM_SYSRULES_dropdownFieldByIndex"(
+            #&quot;SYSTEM_SYSRULES_dropdownFieldByIndex&quot;(
               label: local!dropDownField_label,
               instructions: local!dropDownField_instructions,
               required: if(
                 local!dropDownField_required = 1,
-                "true",
-                "false"
+                &quot;true&quot;,
+                &quot;false&quot;
               ),
               disabled: if(
                 local!dropDownField_disabled = 1,
-                "true",
-                "false"
+                &quot;true&quot;,
+                &quot;false&quot;
               ),
-              choiceLabels: extract(local!dropDownField_choiceLabels,"[","]"),
+              choiceLabels: extract(local!dropDownField_choiceLabels,&quot;[&quot;,&quot;]&quot;),
 			  placeholderLabel: local!dropDownField_placeHolderLabel,
               value: local!dropDownField_value,
               saveInto: local!dropDownField_value
@@ -155,4 +156,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-03-04T11:00:47.139-->
+</contentHaul>

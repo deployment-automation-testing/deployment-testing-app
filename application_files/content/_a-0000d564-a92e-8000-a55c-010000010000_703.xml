@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>company_facets</name>
         <uuid>_a-0000d564-a92e-8000-a55c-010000010000_703</uuid>
@@ -52,4 +53,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-03-04T11:00:47.031-->
+</contentHaul>
