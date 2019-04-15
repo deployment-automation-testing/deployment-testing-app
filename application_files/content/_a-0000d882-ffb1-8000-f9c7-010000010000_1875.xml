@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DocumentDownloadLink</name>
         <uuid>_a-0000d882-ffb1-8000-f9c7-010000010000_1875</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -16,30 +15,30 @@
         </visibility>
         <definition>= load(
 
-	local!anyLinkField_DocumentDownloadLink_documentToSearchFor: &quot;mp3File&quot;,  
-    local!anyLinkField_DocumentDownloadLink_label: &quot;DocumentDownLoadLink&quot;,  
+	local!anyLinkField_DocumentDownloadLink_documentToSearchFor: "mp3File",  
+    local!anyLinkField_DocumentDownloadLink_label: "DocumentDownLoadLink",  
   	
 	with(	
 		
 		local!anyLinkField_DocumentDownloadLink_document: finddocumentsbyname(true, local!anyLinkField_DocumentDownloadLink_documentToSearchFor),
 		
-		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Dynamic Sail Component&quot;,
+		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Dynamic Sail Component",
           columns: {
-				#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+				#"SYSTEM_SYSRULES_columnLayout"(
 				  contents: {                
-					#&quot;SYSTEM_SYSRULES_textField&quot;(
-					  label: &quot;DocumentDownloadLink Document&quot;,
-					  instructions: &quot;Enter name of document, logic will return first document matching name&quot;,
+					#"SYSTEM_SYSRULES_textField"(
+					  label: "DocumentDownloadLink Document",
+					  instructions: "Enter name of document, logic will return first document matching name",
 					  required: false,
 					  readOnly: false,
 					  disabled: false,
 					  value: local!anyLinkField_DocumentDownloadLink_documentToSearchFor,
 					  saveInto: local!anyLinkField_DocumentDownloadLink_documentToSearchFor
 					),
-					#&quot;SYSTEM_SYSRULES_textField&quot;(
-					  label: &quot;DocumentDownloadLink Label&quot;,
-					  instructions: &quot;Enter text for the dynamic DocumentDownloadLink Label value&quot;,
+					#"SYSTEM_SYSRULES_textField"(
+					  label: "DocumentDownloadLink Label",
+					  instructions: "Enter text for the dynamic DocumentDownloadLink Label value",
 					  required: false,
 					  readOnly: false,
 					  disabled: false,
@@ -48,12 +47,12 @@
 					) 
 			  }
             ),
-			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+			#"SYSTEM_SYSRULES_columnLayout"(
               contents: {
 
 				'type!{http://www.appian.com/ae/types/2009}AnyLinkField'(
-					label: &quot;&quot;,
-					instructions: &quot;&quot;,
+					label: "",
+					instructions: "",
 					links: {	
 					
 						/*-TODO- need to change to a!type */ 'type!{http://www.appian.com/ae/types/2009}DocumentDownloadLink'( 
@@ -62,7 +61,7 @@
 						
 						)  			
 					},
-					labelPosition: &quot;ADJACENT&quot;							
+					labelPosition: "ADJACENT"							
 					)				
 				}
 			)
@@ -103,4 +102,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-04-15T11:33:39.907-->

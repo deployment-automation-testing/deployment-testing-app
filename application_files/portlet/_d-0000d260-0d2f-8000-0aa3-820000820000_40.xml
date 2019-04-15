@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<portletHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><portletHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <portlet>
         <uuid>_d-0000d260-0d2f-8000-0aa3-820000820000_40</uuid>
         <name>Test Report</name>
@@ -89,4 +88,4 @@
             <groups/>
         </role>
     </roleMap>
-</portletHaul>
+</portletHaul><!--updated on 2019-04-15T11:33:39.508-->

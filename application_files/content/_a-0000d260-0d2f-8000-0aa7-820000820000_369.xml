@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <report>
         <name>Test for Report Node - Include Child</name>
         <uuid>_a-0000d260-0d2f-8000-0aa7-820000820000_369</uuid>
@@ -354,4 +353,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-04-15T11:33:39.505-->
