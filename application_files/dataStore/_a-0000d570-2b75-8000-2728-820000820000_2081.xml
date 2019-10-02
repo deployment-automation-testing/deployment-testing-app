@@ -4,8 +4,9 @@
         <uuid>_a-0000d570-2b75-8000-2728-820000820000_2081</uuid>
         <name>Records</name>
         <description></description>
-        <dataSourceKey>jdbc/AppianAnywhere</dataSourceKey>
+        <dataSourceKey>jdbc/Dev</dataSourceKey>
         <adaptingExplicitSqlNames>false</adaptingExplicitSqlNames>
+        <autoUpdateSchema>false</autoUpdateSchema>
         <entities>
             <entity>
                 <uuid>b285c4ed-eac8-49c5-8507-cdeb75366164</uuid>

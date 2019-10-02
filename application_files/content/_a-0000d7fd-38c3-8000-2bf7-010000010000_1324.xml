@@ -20,16 +20,8 @@
                 <namespace>http://www.appian.com/ae/types/2009</namespace>
             </type>
             <value a:id="-1" a:uuid="74fda519-09b6-4192-bafd-3e4bd90a42ee" name="">
-                <a:pluralName/>
-                <a:description/>
-                <a:urlStub/>
-                <a:listViewTemplateExpr/>
                 <a:isSystem>false</a:isSystem>
-                <a:dataSrcExpr/>
-                <a:facetsListExpr/>
-                <a:defaultFiltersExpr/>
                 <a:security>16383</a:security>
-                <a:opaqueId/>
             </value>
         </typedValue>
     </constant>
