@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <folder>
         <name>Ocean Reports</name>
         <uuid>0001d1ea-b1e4-8000-ad27-d9fb51d9fb51</uuid>
-        <description/>
+        <description></description>
         <parentUuid>SYSTEM_FOLDER_SYSTEM_REPORTS</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -42,4 +43,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:14.999-->
+</contentHaul>

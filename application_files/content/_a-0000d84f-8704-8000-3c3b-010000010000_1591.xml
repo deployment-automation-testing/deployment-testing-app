@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DashboardLayout</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1591</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -13,18 +14,18 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>= #"SYSTEM_SYSRULES_sectionLayoutColumns"(
-  label: "Component not yet implemented",
+        <definition>= #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+  label: &quot;Component not yet implemented&quot;,
   columns: {
-    #"SYSTEM_SYSRULES_columnLayout"(
+    #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
       contents: {
-        #"SYSTEM_SYSRULES_textField"(
-          label: "",
-          instructions: "",
+        #&quot;SYSTEM_SYSRULES_textField&quot;(
+          label: &quot;&quot;,
+          instructions: &quot;&quot;,
           required: false,
           readOnly: true,
           disabled: false,
-          value: "Component not yet implemented"
+          value: &quot;Component not yet implemented&quot;
         )
       }
     )
@@ -61,4 +62,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:15.141-->
+</contentHaul>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_ProgressBarField</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1571</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,36 +15,36 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>= load(
-  local!progressBarField_label: "label",
-  local!progressBarField_instructions: "instructions",  
+  local!progressBarField_label: &quot;label&quot;,
+  local!progressBarField_instructions: &quot;instructions&quot;,  
   local!progressBarField_percentage: 50,   
   with(
-    #"SYSTEM_SYSRULES_sectionLayoutColumns"(
-      label: "Dynamic Sail Component",
+    #&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+      label: &quot;Dynamic Sail Component&quot;,
       columns: {
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Label",
-              instructions: "Enter text for the dynamic Label value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Label&quot;,
+              instructions: &quot;Enter text for the dynamic Label value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!progressBarField_label,
               saveInto: local!progressBarField_label
             ),
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Instructions",
-              instructions: "Enter text for the dynamic Instructions value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Instructions&quot;,
+              instructions: &quot;Enter text for the dynamic Instructions value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
               value: local!progressBarField_instructions,
               saveInto: local!progressBarField_instructions
             ),           
-            #"SYSTEM_SYSRULES_textField"(
-              label: "Percentage",
-              instructions: "Enter number of dynamic Percentage value",
+            #&quot;SYSTEM_SYSRULES_textField&quot;(
+              label: &quot;Percentage&quot;,
+              instructions: &quot;Enter number of dynamic Percentage value&quot;,
               required: false,
               readOnly: false,
               disabled: false,
@@ -52,9 +53,9 @@
             )          
           }
         ),
-        #"SYSTEM_SYSRULES_columnLayout"(
+        #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
           contents: {
-            #"SYSTEM_SYSRULES_progressBarField"(
+            #&quot;SYSTEM_SYSRULES_progressBarField&quot;(
               label: local!progressBarField_label,
               instructions: local!progressBarField_instructions,              
               percentage: todecimal(local!progressBarField_percentage)                     
@@ -96,4 +97,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:15.091-->
+</contentHaul>

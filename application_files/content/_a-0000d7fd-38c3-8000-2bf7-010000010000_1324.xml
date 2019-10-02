@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>CommitsRecordType</name>
         <uuid>_a-0000d7fd-38c3-8000-2bf7-010000010000_1324</uuid>
@@ -58,4 +59,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:15.208-->
+</contentHaul>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>uiCommits</name>
         <uuid>_a-0000d566-475b-8000-345d-010000010000_614</uuid>
@@ -14,7 +15,7 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>=load(
-readonly: not(#"_a-0000d6f5-c20a-8000-bd70-010000010000_1375"),
+readonly: not(#&quot;_a-0000d6f5-c20a-8000-bd70-010000010000_1375&quot;),
 date: today() + rand()*360,
 user: loggedInUser(),
 useremail: user,
@@ -23,8 +24,8 @@ useremail: user,
     'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
       contents: {
       'type!{http://www.appian.com/ae/types/2009}ParagraphField'(
-        label: "Description of the commit",
-	instructions: "",
+        label: &quot;Description of the commit&quot;,
+	instructions: &quot;&quot;,
 	required: true(),
 	readOnly: readonly,
 	disabled: false(),
@@ -32,15 +33,15 @@ useremail: user,
 	saveInto: rf!desc
 	),
       'type!{http://www.appian.com/ae/types/2009}SectionLayout'(
-         label: "More Info", 
+         label: &quot;More Info&quot;, 
          content:
          'type!{http://www.appian.com/ae/types/2009}ColumnArrayLayout'(
            columns: {
              'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
                contents: {
                  'type!{http://www.appian.com/ae/types/2009}DateField'(
-	           label: "Completion Date", 
-		   instructions: "", 
+	           label: &quot;Completion Date&quot;, 
+		   instructions: &quot;&quot;, 
 		   required: false(), 
 		   readOnly: readonly, 
 		   disabled: false(),
@@ -48,8 +49,8 @@ useremail: user,
 		   saveInto: local!date
 		   ),
                  'type!{http://www.appian.com/ae/types/2009}LinkField'(
-	           label: "JIRA Link",
-		   links: {label:"JIRA Ticket", uri:"https://issues.appian.com"}
+	           label: &quot;JIRA Link&quot;,
+		   links: {label:&quot;JIRA Ticket&quot;, uri:&quot;https://issues.appian.com&quot;}
 		   )
                  }
 	       )
@@ -61,8 +62,8 @@ useremail: user,
     'type!{http://www.appian.com/ae/types/2009}ColumnLayout'(
       contents: {
       'type!{http://www.appian.com/ae/types/2009}IntegerField'(
-        label: "Sprint ID", 
-	instructions: "", 
+        label: &quot;Sprint ID&quot;, 
+	instructions: &quot;&quot;, 
 	required: false(), 
 	readOnly: readonly, 
 	disabled: false(), 
@@ -70,8 +71,8 @@ useremail: user,
 	saveInto: rf!sprintId
 	),
       'type!{http://www.appian.com/ae/types/2009}FloatingPointField'(
-        label: "Percentage Complete", 
-	instructions: rf!percentComplete &amp; "%", 
+        label: &quot;Percentage Complete&quot;, 
+	instructions: rf!percentComplete &amp; &quot;%&quot;, 
 	required: false(), 
 	readOnly: readonly, 
 	disabled: false(),
@@ -79,8 +80,8 @@ useremail: user,
 	saveInto: rf!percentComplete 
 	),
       'type!{http://www.appian.com/ae/types/2009}ParagraphField'(
-        label: "Notes", 
-	instructions: "", 
+        label: &quot;Notes&quot;, 
+	instructions: &quot;&quot;, 
 	required: false(), 
 	readOnly: readonly, 
 	disabled: false(), 
@@ -88,36 +89,36 @@ useremail: user,
 	saveInto: rf!notes
 	),
     'type!{http://www.appian.com/ae/types/2009}LinkField'(
-        label: "Feature Owner", 
+        label: &quot;Feature Owner&quot;, 
         links:{
          label: queryrecord(
-  'type!{http://www.appian.com/ae/types/2009}RecordType'('@attributes':{uuid:"96100bcd-20e2-4daa-b62d-78207e641d22", id:1}), 
+  'type!{http://www.appian.com/ae/types/2009}RecordType'('@attributes':{uuid:&quot;96100bcd-20e2-4daa-b62d-78207e641d22&quot;, id:1}), 
   'type!{http://www.appian.com/ae/types/2009}Query'(
     'selection|aggregation':'type!{http://www.appian.com/ae/types/2009}Selection'(
       columms:{
         'type!{http://www.appian.com/ae/types/2009}Column'(
-          field:"username",
+          field:&quot;username&quot;,
           visible:true()
         )
       }
     ),
     'logicalExpression|filter|search': 'type!{http://www.appian.com/ae/types/2009}QueryFilter'(
-      field: "id",
-      operator: "=",
+      field: &quot;id&quot;,
+      operator: &quot;=&quot;,
       valueExpression: rf!featureOwner
     ),
     'paginginfo': 'type!{http://www.appian.com/ae/types/2009}PagingInfo'(
       startIndex:1,
       batchSize:1,
       sort:'type!{http://www.appian.com/ae/types/2009}SortInfo'(
-        field:"username",
+        field:&quot;username&quot;,
         ascending:true()
       )
     )
   )
 ).data.username
          ,
-         uri: urlforrecord('type!{http://www.appian.com/ae/types/2009}RecordType'('@attributes':{uuid:"96100bcd-20e2-4daa-b62d-78207e641d22", id:1}), rf!featureOwner)
+         uri: urlforrecord('type!{http://www.appian.com/ae/types/2009}RecordType'('@attributes':{uuid:&quot;96100bcd-20e2-4daa-b62d-78207e641d22&quot;, id:1}), rf!featureOwner)
         },
 		required: true(), 
 		readOnly: readonly, 
@@ -125,7 +126,7 @@ useremail: user,
 		value: user,
 		saveInto: {
 		  user &lt;&lt; fn!identity,
-		  useremail &lt;&lt; fn!stripwith(_, " ") &lt;&lt; fn!lower
+		  useremail &lt;&lt; fn!stripwith(_, &quot; &quot;) &lt;&lt; fn!lower
 		}
 	)
     }
@@ -162,4 +163,4 @@ useremail: user,
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:15.192-->
+</contentHaul>

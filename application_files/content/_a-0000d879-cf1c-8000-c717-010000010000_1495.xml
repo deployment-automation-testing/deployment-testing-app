@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_FileUploadField</name>
         <uuid>_a-0000d879-cf1c-8000-c717-010000010000_1495</uuid>
-        <description/>
+        <description></description>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -16,14 +17,14 @@
         <definition>= load(
   
   local!fileUploadField_value: null(),
-  local!fileUploadField_label: "Label",
-  local!fileUploadField_instructions: "Instructions",
+  local!fileUploadField_label: &quot;Label&quot;,
+  local!fileUploadField_instructions: &quot;Instructions&quot;,
   local!fileUploadField_required: {2},
   local!fileUploadField_disabled: {2},
   local!fileUploadField_target_ItemType: {1},
-  local!fileUploadField_target_ItemToSearchFor: "Temporary Documents",
-  local!fileUploadField_documentName: "Document Name",  
-  local!fileUploadField_validationText: "Validation Text (No target folder enter)",
+  local!fileUploadField_target_ItemToSearchFor: &quot;Temporary Documents&quot;,
+  local!fileUploadField_documentName: &quot;Document Name&quot;,  
+  local!fileUploadField_validationText: &quot;Validation Text (No target folder enter)&quot;,
   local!fileUploadField_validationTrigger: {2},
   local!fileUploadField_validations: { 					  
 		local!fileUploadField_validationText				
@@ -34,98 +35,98 @@
 												findfoldersbyname(true, local!fileUploadField_target_ItemToSearchFor),
 												finddocumentsbyname(true, local!fileUploadField_target_ItemToSearchFor)
 											),
-		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
-          label: "Dynamic Sail Component",
+		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
+          label: &quot;Dynamic Sail Component&quot;,
           columns: {
-            #"SYSTEM_SYSRULES_columnLayout"(
+            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Label",
-                  instructions: "Enter text for the dynamic Label value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Label&quot;,
+                  instructions: &quot;Enter text for the dynamic Label value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!fileUploadField_label,
                   saveInto: local!fileUploadField_label
                 ),
-                #"SYSTEM_SYSRULES_textField"(
-                  label: "Instructions",
-                  instructions: "Enter text for the dynamic Instructions value",
+                #&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Instructions&quot;,
+                  instructions: &quot;Enter text for the dynamic Instructions value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!fileUploadField_instructions,
                   saveInto: local!fileUploadField_instructions
                 ),
-                #"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Required",
-                  instructions: "Select the value",
+                #&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Required&quot;,
+                  instructions: &quot;Select the value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "True",
-                    "False",
-					"Null"
+                    &quot;True&quot;,
+                    &quot;False&quot;,
+					&quot;Null&quot;
                   },
                   value: local!fileUploadField_required,
                   saveInto: local!fileUploadField_required
                 ),				
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Disabled",
-                  instructions: "Select the value",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Disabled&quot;,
+                  instructions: &quot;Select the value&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "True",
-                    "False",
-					"Null"
+                    &quot;True&quot;,
+                    &quot;False&quot;,
+					&quot;Null&quot;
                   },
                   value: local!fileUploadField_disabled,
                   saveInto: local!fileUploadField_disabled
                 ),
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Target Search Type",
-                  instructions: "Select the type of Target to search for",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Target Search Type&quot;,
+                  instructions: &quot;Select the type of Target to search for&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "Search for Folders",
-                    "Search for Documents"					
+                    &quot;Search for Folders&quot;,
+                    &quot;Search for Documents&quot;					
                   },
                   value: local!fileUploadField_target_ItemType,
                   saveInto: local!fileUploadField_target_ItemType
                 ),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: if(local!fileUploadField_target_ItemType=1,"Folder Name", "Document Name"),
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: if(local!fileUploadField_target_ItemType=1,&quot;Folder Name&quot;, &quot;Document Name&quot;),
 				  instructions: if(local!fileUploadField_target_ItemType=1,
-								"Enter name of folder, logic will return first folder matching name",
-								"Enter name of Document, logic will return first Document matching name"),
+								&quot;Enter name of folder, logic will return first folder matching name&quot;,
+								&quot;Enter name of Document, logic will return first Document matching name&quot;),
 				  required: false,
 				  readOnly: false,
 				  disabled: false,
 				  value: local!fileUploadField_target_ItemToSearchFor,
 				  saveInto: local!fileUploadField_target_ItemToSearchFor
 				),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: if(local!fileUploadField_target_ItemType=1,"SaveInto Folder","Version: Name of Document "),
-				  instructions: if(local!fileUploadField_target_ItemType=1,"Folder to be saved into","Document to be updated"),
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: if(local!fileUploadField_target_ItemType=1,&quot;SaveInto Folder&quot;,&quot;Version: Name of Document &quot;),
+				  instructions: if(local!fileUploadField_target_ItemType=1,&quot;Folder to be saved into&quot;,&quot;Document to be updated&quot;),
 				  required: false,
 				  readOnly: true,
 				  disabled: false,
 				  value: local!fileUploadField_target_item				  
 				),
-				#"SYSTEM_SYSRULES_textField"(
-                  label: "Document Name",
-                  instructions: "Enter text for the dynamic Document Name value",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+                  label: &quot;Document Name&quot;,
+                  instructions: &quot;Enter text for the dynamic Document Name value&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!fileUploadField_documentName,
                   saveInto: local!fileUploadField_documentName
                 ),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "Value",
-                  instructions: "The Value value",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;Value&quot;,
+                  instructions: &quot;The Value value&quot;,
                   required: false,
                   readOnly: true,
                   disabled: false,
@@ -133,21 +134,21 @@
                   saveInto: local!fileUploadField_value
 				
 				),
-				#"SYSTEM_SYSRULES_radioButtonFieldByIndex"(
-                  label: "Validation",
-                  instructions: "Set generic Validation to trigger when uploading File",
+				#&quot;SYSTEM_SYSRULES_radioButtonFieldByIndex&quot;(
+                  label: &quot;Validation&quot;,
+                  instructions: &quot;Set generic Validation to trigger when uploading File&quot;,
                   required: false,
                   disabled: false,
                   choiceLabels: {
-                    "Trigger Validation",
-                    "Don't Trigger Validation"					
+                    &quot;Trigger Validation&quot;,
+                    &quot;Don't Trigger Validation&quot;					
                   },
                   value: local!fileUploadField_validationTrigger,
                   saveInto: local!fileUploadField_validationTrigger
                 ),
-				#"SYSTEM_SYSRULES_textField"(
-				  label: "Validation Text",
-                  instructions: "Enter text displayed by the Validation",
+				#&quot;SYSTEM_SYSRULES_textField&quot;(
+				  label: &quot;Validation Text&quot;,
+                  instructions: &quot;Enter text displayed by the Validation&quot;,
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -158,27 +159,27 @@
 				 
               }
             ),
-			#"SYSTEM_SYSRULES_columnLayout"(
+			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
               contents: {
 			  
-				#"SYSTEM_SYSRULES_fileUploadField"(
+				#&quot;SYSTEM_SYSRULES_fileUploadField&quot;(
 				
 					  label: local!fileUploadField_label,
 					  instructions: local!fileUploadField_instructions,
-					  required: if(local!fileUploadField_required=1,"true",if(local!fileUploadField_required=2,"false",null())),
-					  disabled: if(local!fileUploadField_disabled=1,"true",if(local!fileUploadField_required=2,"false",null())),
+					  required: if(local!fileUploadField_required=1,&quot;true&quot;,if(local!fileUploadField_required=2,&quot;false&quot;,null())),
+					  disabled: if(local!fileUploadField_disabled=1,&quot;true&quot;,if(local!fileUploadField_required=2,&quot;false&quot;,null())),
 					  target: index(local!fileUploadField_target_item,1,null()),	
 					  documentName: local!fileUploadField_documentName,
 					  validations: if(local!fileUploadField_validationTrigger=1,local!fileUploadField_validations,null()),	 
 					  value: local!fileUploadField_value,
 					  saveInto: local!fileUploadField_value
 				),
-				#"SYSTEM_SYSRULES_ButtonArrayLayout"(
+				#&quot;SYSTEM_SYSRULES_ButtonArrayLayout&quot;(
 				  buttons: {
-					#"SYSTEM_SYSRULES_ButtonWidget"(
-					  label: "Submit",
-					  style: "PRIMARY",
-					  confirmMessage: "Submit?",
+					#&quot;SYSTEM_SYSRULES_ButtonWidget&quot;(
+					  label: &quot;Submit&quot;,
+					  style: &quot;PRIMARY&quot;,
+					  confirmMessage: &quot;Submit?&quot;,
 					  disabled: true,
 					  skipValidation: false,
 					  value: local!submitButton,
@@ -225,4 +226,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul><!--updated on 2019-09-26T09:53:15.172-->
+</contentHaul>
