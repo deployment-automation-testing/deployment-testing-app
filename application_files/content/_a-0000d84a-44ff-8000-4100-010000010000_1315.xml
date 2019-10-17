@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>imagegalleryfolder</name>
         <uuid>_a-0000d84a-44ff-8000-4100-010000010000_1315</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d6fd-7cb9-8000-7886-010000010000_951</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -48,4 +47,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-10-17T16:30:36.216-->

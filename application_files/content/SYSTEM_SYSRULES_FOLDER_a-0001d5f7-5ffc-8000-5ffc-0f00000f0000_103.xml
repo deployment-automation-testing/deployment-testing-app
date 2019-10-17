@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rulesFolder>
         <name>com.appian.ui.validation</name>
         <uuid>SYSTEM_SYSRULES_FOLDER_a-0001d5f7-5ffc-8000-5ffc-0f00000f0000_103</uuid>
@@ -41,4 +40,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-10-17T16:30:36.155-->

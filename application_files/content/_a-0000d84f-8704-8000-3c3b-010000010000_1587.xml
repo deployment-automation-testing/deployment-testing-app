@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
         <name>dynamic_DynamicLink</name>
         <uuid>_a-0000d84f-8704-8000-3c3b-010000010000_1587</uuid>
-        <description></description>
+        <description/>
         <parentUuid>_a-0000d84f-8704-8000-3c3b-010000010000_1561</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -16,27 +15,27 @@
         </visibility>
         <definition>= load( 
      
-  local!dynamicLink_label: &quot;label&quot;,
+  local!dynamicLink_label: "label",
   local!dynamicLink_value: true,
  
   with(		
-		#&quot;SYSTEM_SYSRULES_sectionLayoutColumns&quot;(
-          label: &quot;Dynamic Sail Component&quot;,
+		#"SYSTEM_SYSRULES_sectionLayoutColumns"(
+          label: "Dynamic Sail Component",
           columns: {
-            #&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+            #"SYSTEM_SYSRULES_columnLayout"(
               contents: {                
-				#&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Label&quot;,
-                  instructions: &quot;Enter text for the dynamic Label value&quot;,
+				#"SYSTEM_SYSRULES_textField"(
+                  label: "Label",
+                  instructions: "Enter text for the dynamic Label value",
                   required: false,
                   readOnly: false,
                   disabled: false,
                   value: local!dynamicLink_label,
                   saveInto: local!dynamicLink_label
                 ),
-                #&quot;SYSTEM_SYSRULES_textField&quot;(
-                  label: &quot;Value&quot;,
-                  instructions: &quot;Enter text for the dynamic Value value. (Appended to label)&quot;,
+                #"SYSTEM_SYSRULES_textField"(
+                  label: "Value",
+                  instructions: "Enter text for the dynamic Value value. (Appended to label)",
                   required: false,
                   readOnly: false,
                   disabled: false,
@@ -45,20 +44,20 @@
                 )
 			  }
             ),
-			#&quot;SYSTEM_SYSRULES_columnLayout&quot;(
+			#"SYSTEM_SYSRULES_columnLayout"(
               contents: {
 
 					'type!{http://www.appian.com/ae/types/2009}AnyLinkField'(
-					label: &quot;&quot;,
-					instructions: &quot;&quot;,
+					label: "",
+					instructions: "",
 					links: {					
-						#&quot;SYSTEM_SYSRULES_dynamicLink&quot;(
-							value: if(local!dynamicLink_value=&quot;null&quot;,null(),not(local!dynamicLink_value)),
-							label: if(local!dynamicLink_label=&quot;null&quot;,null(),local!dynamicLink_label &amp; &quot; [Value = &quot; &amp;local!dynamicLink_value&amp;&quot;]&quot;),
+						#"SYSTEM_SYSRULES_dynamicLink"(
+							value: if(local!dynamicLink_value="null",null(),not(local!dynamicLink_value)),
+							label: if(local!dynamicLink_label="null",null(),local!dynamicLink_label &amp; " [Value = " &amp;local!dynamicLink_value&amp;"]"),
 							saveInto: local!dynamicLink_value
 						)  				
 					},
-					labelPosition: &quot;ADJACENT&quot;							
+					labelPosition: "ADJACENT"							
 					)
 				
 				}
@@ -100,4 +99,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-10-17T16:30:36.098-->

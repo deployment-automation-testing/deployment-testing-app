@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8"?><contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <constant>
         <name>CompanyRecordType</name>
         <uuid>_a-0000d7c6-7676-8000-6fcc-010000010000_1309</uuid>
@@ -20,8 +19,16 @@
                 <namespace>http://www.appian.com/ae/types/2009</namespace>
             </type>
             <value a:id="-1" a:uuid="e8233cf0-8fc7-4d5d-9f7a-52e26c38a80a" name="">
+                <a:pluralName/>
+                <a:description/>
+                <a:urlStub/>
+                <a:listViewTemplateExpr/>
                 <a:isSystem>false</a:isSystem>
+                <a:dataSrcExpr/>
+                <a:facetsListExpr/>
+                <a:defaultFiltersExpr/>
                 <a:security>16383</a:security>
+                <a:opaqueId/>
             </value>
         </typedValue>
     </constant>
@@ -51,4 +58,4 @@
             <groups/>
         </role>
     </roleMap>
-</contentHaul>
+</contentHaul><!--updated on 2019-10-17T16:30:35.985-->
