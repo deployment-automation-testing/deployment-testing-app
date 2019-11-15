@@ -23,4 +23,4 @@
       <xsd:element name="isContractor" nillable="true" type="xsd:boolean"/>
     </xsd:sequence>
   </xsd:complexType>
-</xsd:schema><!--updated on 2019-11-04T07:00:25.472-->
+</xsd:schema><!--updated on 2019-11-15T09:27:23.627-->
