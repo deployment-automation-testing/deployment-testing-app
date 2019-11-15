@@ -167,4 +167,4 @@ Trace:
 2015-07-24 15:23:56.558 DEBUG processModel 490 0002db6f-2c7c-8000-23cd-010000010000 Processing reference: Role[name=INITIATOR]
 2015-07-24 15:23:56.558 DEBUG processModel 490 0002db6f-2c7c-8000-23cd-010000010000 Exporting binary resources.
 2015-07-24 15:23:56.558 DEBUG processModel 490 0002db6f-2c7c-8000-23cd-010000010000 Serializing object to XML.
-2015-07-24 15:23:56.562 DEBUG processModel 490 0002db6f-2c7c-8000-23cd-010000010000 Object transported. 
+2015-07-24 15:23:56.562 DEBUG processModel 490 0002db6f-2c7c-8000-23cd-010000010000 Object transported.
