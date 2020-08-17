@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><dataStoreHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataStoreHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <dataStore>
         <uuid>_a-0000d570-2b75-8000-2728-820000820000_2081</uuid>
         <name>Records</name>
-        <description/>
+        <description></description>
         <dataSourceKey>jdbc/AppianAnywhere</dataSourceKey>
         <adaptingExplicitSqlNames>false</adaptingExplicitSqlNames>
         <entities>
@@ -45,4 +46,4 @@
             <groups/>
         </role>
     </roleMap>
-</dataStoreHaul><!--updated on 2020-01-29T16:15:35.631-->
+</dataStoreHaul>
